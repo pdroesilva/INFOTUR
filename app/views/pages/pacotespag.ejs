@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes (Pagamento)</title>
+    <link rel="stylesheet" href="/css/style_pacotespag.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+
+
+    
+    <!-- INICIO DO CABEÇALHO -->
+    <header>
+        <div class="divh">
+            <img src="/img/img_pacotespag/INFOTUR LOGO.png" alt="Logo">
+        </div>
+    </header>
+    <!-- FIM DO CABEÇALHO -->
+
+
+
+
+    <!-- INICIO DO MAIN -->
+    <!--TEXT'S-->
+    <main>
+        <section class="titles">
+            <h1>Pagamento</h1>
+            <a href="http://localhost:8000/pacotes_confimacao" class="arrow"></a>
+            <p><strong>Etapas</strong></p>
+        </section>
+        <section class="etapas">
+            <p>1. Endereçoﾠ-> </p>
+            <p><strong>2. Pagamentoﾠ-> </strong></p>
+            <p>3. Confirmação</p>
+        </section>
+<!--FIM DOS TEXT'S-->
+
+
+
+
+<!--CONTAINER1-->
+<section class="container-1">
+    <div class="main">
+        <br>
+    <H2><strong>Formas de pagamento</strong></H2>
+    <h3> -Cartão de Crédito/Debito</h3>
+</div>
+<div class="cartoes">
+<img src="/img/icones_pacotespag/logomarca-mastercard.gif">
+<img src="/img/icones_pacotespag/bandeiras-de-cartao-de-credito-como-funcionam-e-principais-375x211.png">
+<img src="/img/icones_pacotespag/regular_f4df08f505a58b45a13913522c79add5.png">
+<img src="/img/icones_pacotespag/logo-hipercard-4096.png">
+</div>
+<div class="card">
+   
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </div>
+      <div class="form-group">
+        <label for="numero">Número do Cartão:</label>
+        <input type="text" id="numero" name="numero" placeholder="Digite o número do cartão" required>
+      </div>
+      <div class="form-group">
+        <label for="validade">Validade:</label>
+        <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Digite o CVV" required>
+      </div>
+      
+    
+  </div>
+  <div class="form-group">
+    <label for="parcelas">Número de Parcelas:</label>
+    <select id="parcelas" name="parcelas">
+      <option value="1">1x sem juros</option>
+      <option value="2">2x sem juros</option>
+      <option value="3">3x sem juros</option>
+      <option value="4">4x sem juros</option>
+      <option value="5">5x sem juros</option>
+    </select>
+  </div>
+  <br>
+  <a href="http://localhost:8000/pacotes_confimacao">
+  <button type="button">Salvar Informações</button>
+</a>
+</form>
+<div class="finaly">
+<img src="/img/img_pacotespag/site-seguro-google.png">
+<img src="/img/img_pacotespag/7222d1c16ce25b203d0504ea00db3773.jpg">
+</div>
+</section>
+<br>
+<!--FIM DO CONTAINER 1-->
+
+
+
+
+
+<!--INICIO DO FOOTER-->
+<footer>
+    <!--DIV I1-->
+    <section class="i1">
+      <h5>INFOTUR</h5>
+      <p>E-mail:</p>
+      <p>infotur@gmail.com</p>
+    </section>
+
+    <!-- Div 2 - i2 (Contato) -->
+    <section class="i2">
+      <h5> Contato</h5>
+      <p>Central de Atendimento</p>
+      <p> (11) 8967-4536</p>
+    </section>
+
+    <!-- Div 3 - i3 (Sobre nós)-->
+    <section class="i3">
+      <h5>Mais </h5>
+      <p> Sobre nós </p>
+      <p> Política de privacidade </p>
+      
+      <!-- Botão de fale conosco -->
+      <input type="button" value="Fale Conosco">
+    </section>
+    <hr>
+
+    <!-- Section ftult (Footer ultimo = ultima section do footer) -->
+    <section class="ftult">
+
+      <!-- Logotipo -->
+      <img src="/img/img_pacotespag/INFOTUR LOGO.png" width="35%">
+      <!-- Texto localizado a esquerda do logotipo -->
+      <p> © 2023 INF TUR  - Instituição de Turismo.<br> 19.242.150/0004-28<br>
+        Rua Capoto Valente, 67- São Paulo, SP - <br>054-18040<br></p>
+      
+        <!-- Icones de redes sociais -->
+        <div class="rds">
+          <img src="/img/icones_pacotespag/instagram.png" alt="Instagram" srcset="">
+          <img src="/img/icones_pacotespag/facebook.png" alt="facebook" srcset="">
+          <img src="/img/icones_pacotespag/twitter.png" alt="twitter" srcset="">
+        </div>
+    </section>
+  </footer>
+  <!--FIM DO FOOTER-->
+
+
+
+
+  <style>
+    footer {
+      background-color: #5b398d;
+    }
+  </style>
+</main>
+<!--FIM DO MAIN-->
+</body>
+</html>
