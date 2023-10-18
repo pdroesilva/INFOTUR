@@ -1,0 +1,429 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+  }
+  header{
+      background-color: #7C5DB7 ;
+      height: 15vw;
+  }
+
+  .logo{
+      width: 35vw;
+      height: 18vw;
+      position: relative;
+      bottom: 1vw;
+  }
+ 
+  .Botão{
+    border-radius: 15px;
+    background-color: #7C5DB7;
+    color: #fff;
+    height: 4vw;
+    font-family: Poppins;
+    width: 14vw;
+    bottom: 10vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 8vw;
+    font-size: 3vw;
+    border: solid 2px white
+} 
+
+
+.container1{
+    background-color: #7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 55vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+.container1 img{
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+    left: 52vw;
+    bottom:37vw;
+}
+
+.container1 h4{
+    margin-left: 3vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.container1 label{
+    font-size: 2vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+.container2{
+    text-align: center;
+    font-size: 3vw;
+    position: relative;
+    margin-bottom: 25vw;
+    margin-top: 10vw;
+}
+
+.container2 h3{
+    margin-top: 10vw;
+    font-size: 5vw;
+    color: #333333;
+    font-family: Poppins;
+}
+hr{
+    width: 75%;
+    border: solid 2px darkorchid;
+    
+}
+.container2 img{
+    width: 50vw;
+    position: relative;
+    height: 50vw;
+    margin-top: 15vw;
+}
+ .container2 label{
+    font-size: 3vw;
+    font-family: Poppins;
+ }
+
+
+.container3{
+    background-color: #F2F2F2;
+    position: relative;
+    height: 100%;
+    bottom: 15vw;
+   }
+
+.um{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 45vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+}
+.um h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.um label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.dois{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 40vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+.dois h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.dois label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.três{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 35vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+.três h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.três label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.quatro{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 35vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  
+}
+.quatro h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.quatro label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.cinco{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 33vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  
+}
+.cinco h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.cinco label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.seis{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 35vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  
+}
+.seis h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.seis label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.sete{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 33vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  
+}
+.sete h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.sete label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.oito{
+    background-color:#7C5DB7;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 28vw;
+    border-radius: 15px;
+    color: #fff;
+    margin: 25px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+  
+}
+.oito h4{
+    margin-left: 5vw;
+    position: relative;
+    font-family: Poppins;
+    font-size: 3vw;
+}
+
+.oito label{
+    font-size: 2.5vw;
+    bottom: 5vw;
+    margin-left: 4vw;
+    font-family: Poppins;
+}
+
+.container4{
+    text-align: center;
+    font-size: 2vw;
+    position: relative;
+    margin-bottom: 25vw;
+    margin-top: 10vw;
+}
+
+.container4 label{
+    margin-top: 10vw;
+    font-size: 3vw;
+    color: #333333;
+    font-family: Poppins;
+}
+
+  footer {
+    background-color: #7C5DB7;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10vw;
+    
+  }
+  
+  
+  
+  .i1, .i2, .i3 {
+      font-family: "Poppins";
+      color: white;
+      margin: 3px;
+      width: 50%;
+      max-width: 60%;
+      margin-left: 5%;
+      height: 50%;
+      max-height: 60%;
+      line-height: 5px;
+  }
+  
+  .i1 p {
+      font-size: clamp(0.1rem, 3.5vw, 1rem);
+      font-weight: 600;
+  }
+  
+  .i1 h5 {
+      font-size: clamp(0.3rem, 4vw, 2rem);
+      font-weight: 500;
+  }
+  
+  .i2 p {
+      font-size: clamp(0.1rem, 3.5vw, 1rem);
+      font-weight: 600;
+  }
+  
+  .i2 h5 {
+      font-size: clamp(0.1rem, 4vw, 2rem);
+      font-weight: 500;
+  }
+  
+  
+  .i3 p {
+      font-size: clamp(0.1rem, 3.5vw, 1rem);
+      font-weight: 600;
+  }
+  
+  .i3 h5 {
+      font-size: clamp(0.1rem, 4vw, 2rem);
+      font-weight: 500;
+  }
+  
+  .i3 input {
+      margin-top: 10px;
+      background-color:  #7C5DB7;
+      border-radius: 15px;
+      border: solid 2px white;
+      color: white;
+      font-family: "Poppins";
+      max-width: 60%;
+      max-width: 300px;
+      font-size: 3.0vw;
+  }
+  
+  footer hr {
+      width: 90%;
+      border: solid 1px white;
+  }
+  
+  .ftult {
+      position: relative;
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 3vw;
+      padding-bottom: 10px;
+  }
+  .ftult p {
+      position: absolute;
+      left: 30%;
+      bottom: 0.5%;
+      top: 7%;
+  }
+  .rds {
+      position: absolute;
+      margin-left: 6%;
+      bottom: 1%;
+      width: 21%;
+  }
+  .rds img {
+      width: 30%;
+  }
+  
+  

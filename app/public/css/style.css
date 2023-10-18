@@ -1,0 +1,269 @@
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/img/imagem\ fundo\ cadastro.jpg");
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+    
+    .content {
+      position: relative;
+      height: 100%;
+    }
+    
+    .main-with-filter {
+      position: relative;
+      z-index: 1;
+      padding: 20px; /* Apenas para espaçamento interno */
+      font-family: "Poppins";
+
+      margin-top: 60px;
+      
+    }
+    
+    .filter-overlay {
+      position: absolute;
+      top: 10vw;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Cor do filtro */
+      z-index: -1;
+      box-shadow:  2px 2px 8px;
+      border-radius: 0.5vw;
+
+      
+    }
+    
+    .main-with-filter h3,
+    .main-with-filter input,
+    .main-with-filter label {
+      position: relative; /* Garante que os elementos fiquem acima do filtro */
+      z-index: 2;
+    }
+
+
+    header {
+
+      background-color: black;
+      filter: opacity(65%);
+      height: 18vw;
+      max-height: 95px;
+      
+    }
+
+    
+ 
+
+
+    main {
+
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+
+      margin: 10%;
+      
+
+  
+    }
+
+
+    form {
+
+       position: relative;
+       top: 20px;
+      
+    }
+
+    main h3 {
+
+      font-size: clamp(1rem,5vw,5rem);
+      margin-bottom: 5%;
+      color: white;
+      margin-top: 20px;
+    }
+
+    main input {
+
+      
+      width: 97%;
+      
+    
+      height: 7vw;
+      max-height: 45px;
+      border-radius: 2vw;
+      border: none;
+      
+      box-shadow: 1px 3px 5px rgba(19, 19, 19, 0.445) ;
+
+      margin: 8px;
+
+
+    }
+
+    main input:hover {
+
+      cursor: pointer;
+      transition: 1s;
+      transition-delay: 1s;
+      color:black;
+
+    }
+
+ 
+
+    form input::placeholder{
+
+      position: relative;
+      left: 10px;
+      color:rgb(0, 0, 0);
+      font-weight: 500;
+
+      font-family: "Poppins";
+      
+    }
+
+
+   
+
+
+
+     
+
+    
+
+     h4 a {
+
+      color: #1E98D7;
+    }
+      
+    
+    
+    .check h4 {
+
+      position: absolute;
+      top: 24%;
+      left: 10%;
+      color:white;
+      font-weight: 500;
+      font-size: clamp(0.4rem, 3vw, 1rem);
+      font-family: "Poppins";
+    }
+
+    .check a {
+
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+
+    .check input {
+
+      position: relative;
+      top: 10%;
+      width: 5%;
+      height: 25%;
+
+    }
+
+    .check {
+
+      position: relative;
+      left: 5px;
+      top: 30px;
+      width: 96%;
+      height: 10vw;
+      
+    }
+
+    
+    
+
+
+
+
+    .fnl {
+
+      box-sizing: border-box;
+      
+      position: relative;
+      top: 90px;
+   
+      
+
+    
+
+      max-width: 568px;
+ 
+     
+      
+    }
+
+    .fnl hr {
+     
+      width: 100%;
+    }
+    
+
+    .fnl button {
+
+
+      position: absolute;
+      left: 66%;
+      width: 35%;
+      height: 5vw;
+      border-radius: 2vw;
+
+      cursor: pointer;
+      color:white;
+      font-family: "Poppins";
+      background-color: #A1BC35;
+      border: none;
+      font-size: clamp(0.5rem,3vw,2rem);
+    }
+
+
+    .fnl img {
+
+      position: relative;
+      bottom: 1.5vw;
+      
+      width: 9%;
+
+      height: 6vw;
+    }
+
+    header img {
+      filter: none;
+      position: absolute;
+      width: 40%;
+      height: 130%;
+      left: 33%;
+      top: -15%;
+    }
+
+    header a {
+
+      filter: none;
+    }
+   
+
+}
+
+
+

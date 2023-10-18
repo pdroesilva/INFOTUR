@@ -1,0 +1,559 @@
+@media screen and (min-width: 320px) and (max-width: 600px){
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -250vh;
+        z-index: 10;
+        width: 100%;
+        background-color: #441982;
+        transition-duration: 0.5s;
+    }
+    
+    .show-menu{
+        top: 0 !important;
+        transition-duration: 0.5s;
+    }
+    
+    .menu-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 2vh 2vw;
+    }
+    
+    .menu-nav>img{
+        margin: 2vh 2w;
+        width: 20% !important;
+    }
+    
+    .menu-user{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5vw;
+        padding: 0 6vw;
+    }
+    
+    .menu-user img{
+        border-radius: 50%;
+        width: 25%;
+        box-shadow: 2px 2px 5px #0000005d;
+        border: 3px solid #63A103;
+    }
+    
+    .menu-user>div{
+        width: 50vw;
+    }
+    
+    
+    .menu-user>div>h1, .menu-user>div>aside{
+        font: normal 600 4vw "Poppins", sans-serif;
+        color: white;
+    }
+    
+    .menu-user>div>aside{
+        color: #63A103;
+    }
+    
+    .menu nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 6vh;
+        gap: 1vh;
+    }
+    
+    nav .nav-item{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        width:100vw;
+        padding:1.5vh 3vw;
+        font: normal 500 3.5vw "Poppins",sans-serif;
+        color: white;
+    }
+    
+    nav .nav-item:hover{
+        background-color: #600d79;
+        box-shadow: 2px 2px 5px #0000005d;
+        
+    }
+    
+    
+    
+    nav #home{
+        margin-top: 8vh;
+        background-color: #57348A;
+        width: 100%;
+        padding: 3vw;
+        text-align: center;
+        font: normal 500 4vw "Poppins",sans-serif;
+        color: white;
+    }
+    
+    .nav-item img{
+        width: 10%;
+    }
+    
+    header{
+        width: 100vw;
+        height: 95vw;
+        background-image: url(/img/Fundo-usu\ alt.jpg) !important;
+        background: white no-repeat scroll center top /contain;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    } */
+    
+    .itens{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .itens>a img{
+        margin: 2vh 3vw;
+        width: 5vw !important;
+        height: 7vw;
+        position: relative;
+        left: 5px;
+    }
+    
+    .menu-container{
+        margin: 2vh 3vw;
+        width: 6.5vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        position: relative;
+        right: 10px;
+    }
+    
+    .menu-container div{
+        width: 100%;
+        height: 10%;
+        background-color: rgb(240, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .user-info{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 70vw;
+    }
+    .user-info img{
+        width: 45%;
+        border-radius: 50%;
+        border: 2px solid ;
+        margin: auto;
+        box-shadow: 2px 2px 5px #0000005d;
+    }
+    
+    .user-info h1{
+        font: normal 500 5vw "Poppins", sanss-serif;
+        margin-top: 2vh;
+    }
+    
+    .user-info aside{
+        font:normal 500 3vw "Poppins", sans-serif;
+        color: #555;
+    }
+ 
+    
+    
+    .user-info>div{
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .caixa-user{
+        width: 45%;
+        padding: 2vw;
+        font: normal bold 3vw "Poppins", sans-serif;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #0000005d;
+    }
+    
+    .favoritados{
+        background-color: #63A103;
+    }
+    
+
+
+
+ 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+    background-image: url("/img/imagens_home/bacheaader.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+     font-family: 'Poppins', sans-serif;
+    }
+
+    #container-logo{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    /* fundo cor logo */
+
+    .logo{
+        height: 15vw;
+        width: 25vw;
+        padding: 0px; 
+        position: relative;
+    }
+    /* logo */
+
+    #paragrafo1{
+        padding-top: 20vw;
+        text-align: center;
+        font-size: 8vw;
+    }
+/* ola infotur */
+
+    #paragrafo2{
+        text-align: center;
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-bottom: 10vw;
+        padding-top: 5vw;
+        font-size: 4.5vw;
+    }
+    /* paragrafo */
+
+    nav{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+    }
+    /* barra de pesquisa */
+    #naveBar{
+        width: 85%;
+        height: 8vw;
+        border-radius: 10vw;
+        border-style: none;
+    }
+    /* barra de pesquisa */
+    input::placeholder{
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    #localizacao{
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        height: 40vw;
+        width: 85%;
+        border-radius: 5vw;
+        position: relative;
+        bottom: 2vw;
+    }
+    /* fundo branco da localizacao */
+
+    .textosimg{
+        text-align: center;
+        color: #441982;
+        font-size: 5.5vw;
+        padding-top: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /* texto antes do boatao 'localizaçao' */
+              
+    #botao_localizcao{
+        all: unset;
+        color: white;
+        font-size: 5.7vw;
+        background-color: #7DB121;
+        margin-top: 7vw;
+        width: 90%;
+        text-align: center;
+        border-radius: 1vw;
+        margin-left: 3.7vw;
+    }
+    /* botao de localicao */
+    #botao_localizcao:hover{
+        cursor: pointer;
+        background-color: #8564D7;
+    }   
+
+
+
+
+
+    p{
+        color: white;
+        font-family: poppins;
+        } 
+        /* deixando textos brancos */
+}
+
+
+
+#TextO{display: none;}
+
+
+
+.imagensescondidas{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 768px){ 
+header{
+    background-image: url("/img/imagens_home/bacheaader.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: 'Poppins', sans-serif;
+} 
+
+#container-logo{
+    background-color: rgba(105, 38, 83, 0.1);
+}
+/* fundo cor logo */
+
+.logo{
+    height: 15vw;
+    width: 25vw;
+    padding: 0px; 
+    position: relative;
+}
+/* logo */
+
+
+
+
+
+.imagensescondidas{
+    display: block;
+}
+
+
+#TextO{
+    display: block;
+    width: 20%;
+}
+
+p{
+    color: white;
+    font-family: poppins;
+    } 
+    /* deixando textos brancos */
+
+
+    .textosdoheader {
+        display: flex; /* Utiliza o modelo de layout flexível */
+    }
+    
+    .textosdoheader p {
+        flex: 1; 
+        /* margin: 1vw;
+        padding: 2vw;  */
+    }
+    .textO{
+        font-size: 2vw;
+        padding: 1.5vw;
+        position: relative;
+        bottom: 12vw;
+        left: 27vw;
+    }
+    
+
+.conta{
+    flex: 1;
+    margin-left: 10%;
+    border: 0.2vw solid #ccc;
+    padding: 0.5vw;
+    padding-top: 1.9vw;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    position: relative;
+    bottom:12.5vw;
+    left: 30vw;
+    border-radius: 1vw;
+}
+
+#paragrafo1{
+    padding-top: 10vw;
+    text-align: left;
+    font-size: 5vw;
+    margin-left: 4vw;
+    width: 60%;
+    white-space: nowrap;
+}
+
+#textosome{display: none;} 
+
+.intro{
+    padding-top: 3vw;
+    font-size: 3vw;
+    width: 60vw;
+    position: relative;
+    left: 5vw;
+}
+
+#localizacao{
+    background-color: rgb(255, 255, 255);
+    margin-top: 1vw;
+    margin-bottom: 10vw;
+    height: 18vw;
+    width: 32%;
+    border-radius: 1vw;
+    position: relative;
+    left: 67%;
+    bottom: 40vw; 
+}
+
+.textosimg{
+    color: #441982;
+    font-size: 2.2vw;
+    padding-top: 3vw;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    position: relative;
+    bottom:2vw;
+    white-space: nowrap;
+}
+
+#botao_localizcao{
+    all: unset;
+    color: white;
+    font-size: 2.5vw;
+    background-color: #7DB121;
+    margin-top: 5vw;
+    width: 80%;
+    text-align: center;
+    border-radius: 1vw;
+    margin-left: 3vw;
+    position: relative;
+    bottom: 3vw;
+}
+/* botao de localicao */
+#botao_localizcao:hover{
+    cursor: pointer;
+    background-color: #8564D7;
+}   
+
+
+nav{
+    display: flex;
+    margin-top: 5vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vw;
+}
+/* barra de pesquisa */
+#naveBar{
+    width: 85%;
+    height: 5vw;
+    border-radius: 4vw;
+    border-style: none;
+}
+/* barra de pesquisa */
+
+
+#introducao{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom:2vw;
+}
+
+
+
+#baba :first-child{
+padding-left: 3vw;
+}
+
+}
+
+
+
+
