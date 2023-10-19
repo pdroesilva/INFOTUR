@@ -2,7 +2,7 @@ var express = require('express')
 var router = express.Router()
 var bcrypt = require('bcryptjs')
 var salr = bcrypt.genSaltSync(12)
-var mysql = require('mysql')
+var mysql = require('mysql -hcontainers-us-west-186.railway.app -uroot -pN7AmMmwDULjN5JLC7OJK --port 7102 --protocol=TCP railway')
 var { body, validationResult } = require('express-validator')
 
 var fabricDeConexao = require('../../config/connection-factory')
