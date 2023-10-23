@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 
 const homeControllerRead = require("../controllers/homeController/homeControllerRead");
 const indexControllerRead = require("../controllers/enderecoController/indexControllerRead");
+const TermosControllerRead = require("../controllers/termos_de_usoController/termosControllerRead");
 //Conxão das Pags restantes Abaixo
 
 
@@ -27,7 +28,7 @@ const indexControllerRead = require("../controllers/enderecoController/indexCont
 
 router.get("/", homeControllerRead.viewPage);
 router.get("/index", indexControllerRead.viewPage);
-
+router.get("/termos_de_uso", TermosControllerRead.viewPage);
 
 
 
