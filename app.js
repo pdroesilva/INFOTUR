@@ -1,26 +1,33 @@
-const express = require('express')
-var session = require('express-session')
-const app = express()
-const porta = process.env.PORT
+require('dotenv').config();
 
-app.use(express.static('app/public'))
+const express = require('express');
+const session = require('express-session');
+const path = require('path');
+const router = require('./app/routes/router');
+const app = express();
+const port = process.env.PORT
 
-app.set('view engine', 'ejs')
-app.set('views', './app/views')
+app.use(express.static(path.join(__dirname, "app", "public")));
+
+app.use(session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        maxAge: 1000 * 60 * 60,
+        httpOnly: true,
+        sameSite: 'strict'
+    }
+}))
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }))
-app.use(
-    session({
-        secret: 'infotur1234',
-        resave: true,
-        saveUninitialized: true,
-    })
-)
+app.use(express.urlencoded({extended: true}));
 
-var rotas = require('./app/routes/router')
-app.use('/', rotas)
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "app", "views"));
 
-app.listen(porta, ()=> {
-    console.log(`Servidor ouvindo na porta ${porta}`)
+app.use("/", router);
+
+app.listen(port, () => {
+    console.log(`Servidor aberto em http://localhost:${port}`);
 })
