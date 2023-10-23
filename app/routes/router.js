@@ -4,7 +4,8 @@ const router = express.Router()
 
 const jwt = require("jsonwebtoken");
 
-const homeControllerRead = require("../controllers/homeController/homeController");
+const homeControllerRead = require("../controllers/homeController/homeControllerRead");
+const indexControllerRead = require("../controllers/enderecoController/indexControllerRead");
 //Conxão das Pags restantes Abaixo
 
 
@@ -25,6 +26,9 @@ const homeControllerRead = require("../controllers/homeController/homeController
 //router.get("/personais", personaisControllerRead.viewPage);
 
 router.get("/", homeControllerRead.viewPage);
+router.get("/index", indexControllerRead.viewPage);
+
+
 
 
 module.exports = router
