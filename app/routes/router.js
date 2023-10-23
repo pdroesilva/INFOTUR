@@ -13,6 +13,8 @@ const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/
 const cadastroControllerRead = require("../controllers/cadastroController/cadastroControllerRead");
 const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
 
+const loginControllerRead = require("../controllers/loginController/loginControllerRead");
+//const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
 
 
 const autenticacaoMiddleware = require("../middlewares/autenticacaoMiddleware");
@@ -24,7 +26,7 @@ const validacaoFormularioMiddleware = require("../middlewares/validacaoFormulari
 //Conxão das Pags restantes Abaixo
 
 
-//router.get("/login", loginControllerRead.getPage);
+router.get("/login", loginControllerRead.getPage);
 //router.post("/login",
 //validacaoFormulariosMiddleware.validacaoLogin,
 //loginControllerAuth.autorizarUsuario);
