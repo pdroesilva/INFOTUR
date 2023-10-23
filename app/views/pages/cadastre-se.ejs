@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar-se</title>
+    <title><%- data.page %></title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -25,11 +25,15 @@
           <main class="main-with-filter">
             <div class="filter-overlay"></div>
             <h3>Cadastre-se</h3>
-            <form action="cadastro" method="post"  onsubmit="validarFormulario()">
+            <form action="/cadastro" method="post"  onsubmit="validarFormulario()">
             <input type="text" name="nome" placeholder="Nome:" id="nome" required maxlength="100" minlength="3">
+
             <input  type="email" name="email" placeholder="E-Mail:" id="email" required maxlength="100">
+
             <input type="password" name="senha" placeholder="Senha:" id="senha" required maxlength="30" minlength="8">
+
             <input type="text" name="cpf" placeholder="CPF:" id="cpf" required maxlength="11" min="11">
+            
             <input type="tel" name="telefone" placeholder="Telefone:" id="telefone">
 
 
