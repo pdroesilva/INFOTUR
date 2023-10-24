@@ -39,7 +39,11 @@ const regrasValidacao = {
         body("telefone")
         .trim()
         .isLength({min: 11, max: 11})
-        .withMessage("Insira seu número de telefone! (Apenas números)")
+        .withMessage("Insira seu número de telefone! (Apenas números)"),
+        body("cpf")
+        .trim()
+        .isLength({min: 11, max: 11})
+        .withMessage("Insira seu número de CPF! (Apenas números)")
  
     ],
 }

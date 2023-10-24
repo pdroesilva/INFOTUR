@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- data.page %></title>
+    <link rel="stylesheet" href="/css/stylelogin.css">
+    <link rel="stylesheet" href="/css/resetlogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+
+
+    <body>
+        <div class="background-image"></div>
+        <div class="content">
+          <header>
+              <a href=""><img src="/img/Imagens-CadTudo/INFOTUR LOGO.png"></a>
+          </header>
+      
+          <main class="main-with-filter">
+            <div class="filter-overlay"></div>
+            <h3>Editar Perfil</h3>
+            <form action="/editar" method="post">
+            <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
+
+              <input type="text" name="nome" placeholder="Nome:" id="nome" 
+              <%- data.input_values ? `value="${data.input_values.nome}"` : "" %>
+              <%- data.errors && data.errors.nome_error ? `class="erro"` : "" %>
+              >
+  
+              <input  type="email" name="email" placeholder="E-Mail:" id="email"
+              <%- data.input_values ? `value="${data.input_values.email}"` : "" %>
+              <%- data.errors && data.errors.email_error ? `class="erro"` : "" %> 
+              >
+    
+              <input type="text" name="cpf" placeholder="CPF:" id="cpf" >
+              
+              <input type="tel" name="telefone" placeholder="Telefone:" id="telefone"
+              <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
+              <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
+              >
+  
+              <section class="fnl">
+                <hr>
+                <a href="#"><img src="/img/desfazer.png" alt="img" class="seta"></a>
+                <a href="usuariorecom.ejs"><button>Confirmar</button></a>
+              </section>
+              
+             </form>                    
+          </main> 
+        </div> 
+    
+</body>
+</html>

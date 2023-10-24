@@ -20,7 +20,7 @@ class ValidacaoFormularios {
 			const email_error = errors.errors.find((error) => error.path === "email");
 			const telefone_error = errors.errors.find((error) => error.path === "telefone");
 			const senha_error = errors.errors.find((error) => error.path === "senha");
-			const cpf_error = errors.errors.find((error) => error.path === "confirmacao_senha");
+			const cpf_error = errors.errors.find((error) => error.path === "cpf");
 
 			return res.render("pages/cadastre-se.ejs", {
 				data: {
@@ -117,11 +117,13 @@ class ValidacaoFormularios {
 		const errors = validationResult(req);
 
 		if (!errors.isEmpty()) {
-			const {nome, email, telefone} = req.body;
+			const {nome, email, cpf, telefone} = req.body;
 
 			const nome_error = errors.errors.find((error) => error.path === "nome");
 			const email_error = errors.errors.find((error) => error.path === "email");
 			const telefone_error = errors.errors.find((error) => error.path === "telefone");
+			const cpf_error = errors.errors.find((error) => error.path === "cpf");
+
             
 
 			return res.render("pages/editar-perfil.ejs", {
@@ -130,13 +132,15 @@ class ValidacaoFormularios {
 					input_values: {
 						nome,
                         email,
-                        telefone
+                        telefone,
+						cpf
                         
 					},
 					errors: {
 						nome_error,
 						email_error,
-						telefone_error
+						telefone_error,
+						cpf_error
 					},
 				},
 			});

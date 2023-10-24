@@ -26,15 +26,32 @@
             <div class="filter-overlay"></div>
             <h3>Cadastre-se</h3>
             <form action="/cadastro" method="post"  onsubmit="validarFormulario()">
-            <input type="text" name="nome" placeholder="Nome:" id="nome" required maxlength="100" minlength="3">
+            <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
 
-            <input  type="email" name="email" placeholder="E-Mail:" id="email" required maxlength="100">
+            <input type="text" name="nome" placeholder="Nome:" id="nome"
+            <%- data.input_values ? `value="${data.input_values.nome}"` : "" %>
+            <%- data.errors && data.errors.nome_error ? `class="erro"` : "" %> 
+            >
 
-            <input type="password" name="senha" placeholder="Senha:" id="senha" required maxlength="30" minlength="8">
+            <input  type="email" name="email" placeholder="E-Mail:" id="email" 
+            <%- data.input_values ? `value="${data.input_values.email}"` : "" %>
+            <%- data.errors && data.errors.email_error ? `class="erro"` : "" %>
+            >
 
-            <input type="text" name="cpf" placeholder="CPF:" id="cpf" required maxlength="11" min="11">
+            <input type="password" name="senha" placeholder="Senha:" id="senha" 
+            <%- data.input_values ? `value="${data.input_values.senha}"` : "" %>
+            <%- data.errors && data.errors.senha_error ? `class="erro"` : "" %>
+            >
+
+            <input type="text" name="cpf" placeholder="CPF:" id="cpf"
+            <%- data.input_values ? `value="${data.input_values.cpf}"` : "" %>
+            <%- data.errors && data.errors.cpf_error ? `class="erro"` : "" %>
+                    >
             
-            <input type="tel" name="telefone" placeholder="Telefone:" id="telefone">
+            <input type="tel" name="telefone" placeholder="Telefone:" id="telefone"
+            <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
+            <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
+            >
 
 
             <section class="check">
