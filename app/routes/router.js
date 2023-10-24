@@ -10,6 +10,7 @@ const TermosControllerRead = require("../controllers/termos_de_usoController/ter
 const ofertasControllerRead = require("../controllers/ofertasController/ofertasControllerRead");
 const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/ofertasmaisControllerRead");
 const pacotespagControllerRead = require("../controllers/pacotespagController/pacotespagControllerRead");
+const perfilControllerRead = require("../controllers/perfilController/perfilControllerRead");
 
 //const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
 
@@ -19,7 +20,7 @@ const cadastroControllerCreate = require("../controllers/cadastroController/cada
 
 
 const loginControllerRead = require("../controllers/loginController/loginControllerRead");
-//const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
+const loginControllerAuth = require("../controllers/loginController/loginControllerAuth");
 
 
 const autenticacaoMiddleware = require("../middlewares/autenticacaoMiddleware");
@@ -33,9 +34,9 @@ const validacaoFormularioMiddleware = require("../middlewares/validacaoFormulari
 
 
 router.get("/login", loginControllerRead.getPage);
-//router.post("/login",
-//validacaoFormulariosMiddleware.validacaoLogin,
-//loginControllerAuth.autorizarUsuario);
+router.post("/login",
+validacaoFormularioMiddleware.validacaoLogin,
+loginControllerAuth.autorizarUsuario);
 
 router.get("/cadastre-se", cadastroControllerRead.getPage);
 router.post("/cadastro",
@@ -56,6 +57,11 @@ router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
 router.get("/pacotespag", pacotespagControllerRead.viewPage);
 
 //router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
+
+router.get("/usuariorecom",
+autenticacaoMiddleware.validateJWT,
+perfilControllerRead.getPage);
+
 
 
 
