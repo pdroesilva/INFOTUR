@@ -9,9 +9,12 @@ const indexControllerRead = require("../controllers/enderecoController/indexCont
 const TermosControllerRead = require("../controllers/termos_de_usoController/termosControllerRead");
 const ofertasControllerRead = require("../controllers/ofertasController/ofertasControllerRead");
 const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/ofertasmaisControllerRead");
+//const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
+
 
 const cadastroControllerRead = require("../controllers/cadastroController/cadastroControllerRead");
 const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
+
 
 const loginControllerRead = require("../controllers/loginController/loginControllerRead");
 //const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
@@ -20,6 +23,7 @@ const loginControllerRead = require("../controllers/loginController/loginControl
 const autenticacaoMiddleware = require("../middlewares/autenticacaoMiddleware");
 const regrasValidacaoMiddleware = require("../middlewares/regrasValidacaoMiddleware");
 const validacaoFormularioMiddleware = require("../middlewares/validacaoFormularioMiddleware");
+
 
 
 
@@ -47,6 +51,8 @@ router.get("/index", indexControllerRead.viewPage);
 router.get("/termos_de_uso", TermosControllerRead.viewPage);
 router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
+
+//router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
 
 
 
