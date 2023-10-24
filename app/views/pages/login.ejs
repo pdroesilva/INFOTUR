@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar-se</title>
+    <title><%- data.page %></title>
     <link rel="stylesheet" href="/css/stylelogin.css">
     <link rel="stylesheet" href="/css/resetlogin.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -27,9 +27,25 @@
           <main class="main-with-filter">
             <div class="filter-overlay"></div>
             <h3>Login</h3>
-            <form action="/login" method="POST">            
-            <input  type="email" name="email" placeholder="E-Mail:" id="email" required maxlength="100">
-            <input type="password" name="senha" placeholder="Senha:" id="senha" required maxlength="30" minlength="8">
+            <form action="/login" method="POST">
+              <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
+
+              
+            <input  type="email" name="email" placeholder="E-Mail:" id="email" 
+            <%- data.input_values ? `value="${data.input_values.email}"` : "" %>
+            <%- data.errors && data.errors.email_error ? `class="erro"` : "" %>
+            >
+
+            <%- data.errors && data.errors.email_error ? `<span class='erro-mensagem'>${data.errors.email_error.msg}</span>` : "" %>
+
+
+            <input type="password" name="senha" placeholder="Senha:" id="senha" 
+            <%- data.input_values ? `value="${data.input_values.senha}"` : "" %>
+            <%- data.errors && data.errors.senha_error ? `class="erro"` : "" %>
+            >
+
+            <%- data.errors && data.errors.senha_error ? `<span class='erro-mensagem'>${data.errors.senha_error.msg}</span>` : "" %>
+
 
             <section class="fnl">
               <hr>
