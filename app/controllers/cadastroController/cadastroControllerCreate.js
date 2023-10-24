@@ -13,12 +13,14 @@ class CadastroController {
             cpf
         } = req.body;
 
+        const senhaCriptografada = req.senhaEncriptada;
+
         try {
             await usuarioModel.createUsuario({
                 nome,
                 email,
                 telefone,
-                senha,
+                senha: senhaCriptografada,
                 cpf
             });
 
