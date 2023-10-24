@@ -7,8 +7,8 @@ class Autenticacao {
             nome,
             email,
             telefone,
-            senha,
-            cpf
+            cpf,
+            senha
         } = req.body;
         const salt = Number(process.env.SALT_ROUNDS);
 
