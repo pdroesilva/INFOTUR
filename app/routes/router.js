@@ -9,6 +9,8 @@ const indexControllerRead = require("../controllers/enderecoController/indexCont
 const TermosControllerRead = require("../controllers/termos_de_usoController/termosControllerRead");
 const ofertasControllerRead = require("../controllers/ofertasController/ofertasControllerRead");
 const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/ofertasmaisControllerRead");
+const pacotespagControllerRead = require("../controllers/pacotespagController/pacotespagControllerRead");
+
 //const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
 
 
@@ -51,6 +53,7 @@ router.get("/index", indexControllerRead.viewPage);
 router.get("/termos_de_uso", TermosControllerRead.viewPage);
 router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
+router.get("/pacotespag", pacotespagControllerRead.viewPage);
 
 //router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
 
