@@ -38,7 +38,10 @@
               <%- data.errors && data.errors.email_error ? `class="erro"` : "" %> 
               >
     
-              <input type="text" name="cpf" placeholder="CPF:" id="cpf" >
+              <input type="text" name="cpf" placeholder="CPF:" id="cpf" 
+              <%- data.input_values ? `value="${data.input_values.cpf}"` : "" %>
+              <%- data.errors && data.errors.cpf_error ? `class="erro"` : "" %> 
+              >
               
               <input type="tel" name="telefone" placeholder="Telefone:" id="telefone"
               <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>

@@ -20,7 +20,7 @@ class EditarPerfilController {
             telefone,
             cpf
 		}, userId);
-		return res.redirect("/editar-perfil");
+		return res.redirect("/usuariorecom");
 		} catch (erro) {
 			console.log(erro);
 
