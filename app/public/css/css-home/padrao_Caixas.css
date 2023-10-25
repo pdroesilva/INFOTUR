@@ -111,18 +111,17 @@
     }
 
     .infoBox{
-        position: relative;
         border-radius: 10px;
         margin-bottom: 2.5vh;
         background-color: black;
         position: relative;
-        left: -1vh;
     }
 
     .infoBox>.ImgFundo{
         width: 100%;
         border-radius: 10px;
         height: 100%;
+        position: relative;
     }
 
     .infoBox p{
