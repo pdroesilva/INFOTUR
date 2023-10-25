@@ -688,8 +688,9 @@ left: -2.5%;
 .inpts {
     display: flex;
     position: relative;
+    left: 30%;
     width: 40%;
-    left: 21vh;
+    top: 1vh;
 }
 
 .inpts input {
