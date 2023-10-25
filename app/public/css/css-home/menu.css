@@ -18,7 +18,7 @@
 
 .menu-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     padding: 2vh 2vw;
@@ -122,10 +122,7 @@ header{
 }
 
 .itens>img{
-    margin: 2vh 3vw;
     width: 30% !important;
-    position: relative;
-    right: 4.5vh;
 }
 
 .menu-container{
