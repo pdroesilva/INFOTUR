@@ -64,12 +64,10 @@
 
 
       header {
-/*         
-        background-color: black;
-        filter: opacity(65%); */
-        height: 18vw;
-       
-      
+         
+    background-color: #000000;
+    height: 18vw;
+    filter: opacity(0.5);    
       }
 
 
@@ -212,18 +210,10 @@
 
       .fnl {
 
-        box-sizing: border-box;
-        
-        position: relative;
-        top: 60px;
-     
-        
-
-      
-
-        max-width: 568px;
-   
-       
+    box-sizing: border-box;
+    position: relative;
+    top: 2vh;
+    max-width: 568px; 
         
       }
 
