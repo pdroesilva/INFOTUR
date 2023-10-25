@@ -686,13 +686,9 @@ left: -2.5%;
 /* Configuração botões */
 
 .inpts {
-
-
     display: flex;
-
     position: absolute;
-    left: 35%;
-
+    left: 27.5%;
     width: 40%;
 }
 
