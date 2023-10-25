@@ -1,223 +1,689 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/css-home/reset.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/css-home/menu.css">
-    <link rel="stylesheet" href="css/css-home/home.css">
-    <link rel="stylesheet" href="css/css-home/padrao_Caixas.css">
-    <script src="js/slider.js" defer></script>
-    <script src="js/favorito.js" defer></script>
-    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="/css/headerhome.css">
+    <link rel="stylesheet" href="/css/mainhome.css">
+    <link rel="stylesheet" href="/css/footerhome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+<!-- 
+
+    <script src="../js/slider.js" defer></script>
+    <script src="../js/favorito.js" defer></script>
+    <script src="../js/menu.js" defer></script> -->
+
+
+    <!--<link rel="stylesheet" href="../css/css.css"> CSS DO MENU QUE EU TAVA FAZENDO -->
 </head>
-
 <body>
-    <header>
-        <div class="itens">
-            <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u30.png?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="Logo InfoTur">
+    <header > 
+        <section id="container-logo"><!-- container logo -->
+                <img class="logo" src="img/imagens_home/logo.png"> <!-- logo -->
+        </section>
 
-            <div class="menu-container">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <div id="TextO">
+        <div class="textosdoheader">
+            <p class="textO">Pacotes</p>
+            <p class="textO">Monumentos</p>
+            <p class="textO">Categorias</p>
+            <p class="textO">Ofertas</p>
+
+            <p class="conta">Abra sua Conta</p>
         </div>
-        <div class="menu">
-            <div class="menu-nav">
-                <div class="menu-container">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- ESSE ERA O MENU HAMBURGUER QUE EU TENTEI FZER
+
+
+    <div  class="floating-element"  id="cor"    onclick="">
+
+            <div class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu">
+                    <a href="#">Pacotes</a>
+                    <a href="#">Ofertas</a>
+                    <a href="#">Monumentos</a>
+                    <a href="#">Mapa interativo</a>
+                    <a href="#">Meu Usuário</a>
                 </div>
             </div>
-            <nav>
-                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/838/838534.png" alt="">Pacotes
-                </div>
-                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/879/879757.png" alt="">Ofertas
-                </div>
-                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009870.png"
-                        alt="">Monumentos</div>
-                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="">Mapa
-                    interativo</div>
-                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt="">Meu
-                    usuário</div>
-                <div id="home">Home</div>
+            <script src="../js/js.js"></script>  //JS DO MENU QUE EU TAVA FAZENDO
+            
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="introducao"><!-- section conteudo introdutorio -->
+          
+            <p id="paragrafo1">Olá, seja bem vindo <br> ao INFOTUR !</p>
+            <div id="textosome">
+                <p id="paragrafo2">O INFOTUR foi pensado justamente para você  que busca praticidade, fácil acesso  e informações sobre os pontos turísticos que você visita. </p>
+            </div>
+            <div id="TextO">
+                <p class="intro">Descubra o mundo com praticidade no INFOTUR, o seu site de turismo que te leva aos melhores destinos de forma facil e rapida .</p>
+            </div>
+        </section>
+
+
+        <div> <!-- div da barra de pesquisa -->
+            <nav  id="baba"> <!-- barra de pesquisa -->
+                <input id="naveBar" type="text" placeholder="Buscar"> <!-- imput type text/ barra de pesquisa -->
             </nav>
         </div>
-        <div class="txt-welcome">
-            <h1>Olá, seja bem vindo ao INFOTUR!</h1>
-            <p>Descubra o mundo com praticidade no INFOTUR, o seu site de turismo que te leva aos melhores destinos
-                de forma fácil e rápida</p>
-        </div>
-        <div class="search-local">
-            <div class="input-search">
-                <img src="img/imagens_home/lupa-removebg-preview.png" alt="Lupa">
-                <input type="search" aria-label="Buscar" placeholder="Buscar">
-            </div>
-            <div class="location-exp">
-                <p>Ative sua localização para uma melhor experiencia</p>
-                <button>Ativar Localização</button>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="Boxes Ofertas">
-            <div>
-                <h2>Ofertas do momento</h2>
-                <aside>Aproveite as melhores ofertas do INFOTUR</aside>
-            </div>
-            <div class="infoBox">
-                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u181_a.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444"
-                    alt="" class="ImgFundo">
-                <div class="precoBox">Por <br><strong>R$20,00</strong></div>
-                <aside>Das 9:00 as 12:00</aside>
-                <h3>Visita Museu Histórico Barueri</h3>
-            </div>
-            <div class="more-by">
-                <a href="#" class="btn_Mais">Saiba Mais</a>
-                <span><strong>Por</strong> Prefeitura Municipal</span>
-            </div>
 
-            </div>
-            </div>
-        </section>
-        <section class="Categorias melhorAva">
-            <div>
-                <h2>Melhores Avaliados</h2>
-                <aside>Os locais com a melhor avaliação para você visitar</aside>
-            </div>
-            <div class="infoBox">
-                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u139_a.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444"
-                    alt="" class="ImgFundo">
-                <div class="precoBox">Público</div>
-                <aside>Das 17:00 as 23:00</aside>
-                <h3>Feira Noturna Barueri</h3>
-            </div>
-            <div class="more-by">
-                <a href="#" class="btn_Mais">Saiba Mais</a>
-                <span><strong>Por</strong> Prefeitura Municipal</span>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section class="categories">
-            <h2>Categorias</h2>
-            <p>Diversas categorias de passeios e atrações para você escolher</p>
-            <div class="categories-self">
-                <a href="#">
-                    <img src="https://source.unsplash.com/random/250x250/?sports" alt="Categoria Esportes">
-                    <p>Esportes</p>
-                </a>
-                <a href="#">
-                    <img src="https://source.unsplash.com/random/250x250/?children" alt=" Categoria Infantis">
-                    <p>Infantis</p>
-                </a>
-                <a href="#">
-                    <img src="https://source.unsplash.com/random/250x250/?events" alt=" Categoria Eventos">
-                    <p>Eventos</p>
-                </a>
-                <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHZ7L5-qJoNy_wz4ZDpvsRGH0s4FFS5t6dRdTrM1SdBEiNcGK3SpsJSIiASOx_TuvE0&usqp=CAU" alt=" Categoria Eventos">
-                    <p>Pacotes</p>
-                </a>
-            </div>
 
+        <section id="localizacao">
+        <!-- secao branca com botao localizacao -->
+            <p class="textosimg" class="paragraforoxo">Ative sua localização para<br> uma melhor experiência</p><!-- texto roxo da secao -->
+            <button id="botao_localizcao" onclick="obter_localizacao">Ativar localização</button><!-- botao localizaçaõ -->
         </section>
-        <section class="vantagens">
-            <h2>INFOTUR <br><span>Principais vantagens</span></h2>
-            <div>
-                <span>
-                    <h3>QR-CODE</h3>
-                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
-                </span>
-                <p><strong>Praticidade</strong> para saber a história de qualquer monumento, ou ponto turístico que você esteja visitando.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div>
-                <span>
-                    <h3>Pacotes turísticos</h3>
-                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
-                </span>
-                <p><strong>Mais agilidade</strong> para encontrar pacotes de viajens e passeios. E tudo do conforto de sua casa.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div>
-                <span>
-                    <h3>Turismo ao seu alcance</h3>
-                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
-                </span>
-                <p><strong>Mais facilidade</strong> para encontrar monumentos, pontos turísticos e atrações próximas a você.</p>
-                <a href="#">Saiba Mais</a>
-            </div>
-            <div class="quem-somos">
-                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u118.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="Quem Somos?">
-                <div>
-                    <h3>QUEM SOMOS?</h3>
-                    <p>Somos um grupo de estudantes da FIEB (Fundação Instituto de Educação de Barueri). E criamos esta solução web para que possamos adquirir experiência no processo de desenvolvimento de web sites.</p>
-                </div>
-            </div>
-        </section>
-        <div class="cor-fundo">
 
-        <section class="praticidade">
-            <h2>Praticidade ao escolher seu passeio</h2>
-            <div class="card-home">
-                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u91.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="">
-                <div>
-                    <h3>Pontos turísticos próximos</h3>
-                    <p>Encontre a atração mais próxima de sua localidade</p>
-                </div>
-                <span><a href="#">Encontrar</a> <a href="#">SAIBA MAIS -></a></span>
-            </div>
-            <hr>
 
-        </section>
-            <section class="praticidade">
-                <h2>Praticidade ao escolher seu passeio</h2>
-                <div class="card-home">
-                    <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u170.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="">
-                    <div>
-                        <h3>Pontos turísticos próximos</h3>
-                        <p>Encontre a atração mais próxima de sua localidade</p>
+    </header><!-- header fechado -->
+    
+
+    <main><!-- inicio main -->
+       
+       <div class="somefertas1">
+        <h2 class="Ofertas">Ofertas do momento</h2> <!-- titulo de ofertas -->
+        <p class="parasimples">Aproveite as melhores ofertas do INFOTUR</p> <!-- melhores ofertas -->
+        <div class="slide_show"><!-- slide show praca das artes -->
+            <ul><!-- lista do slide -->
+                <li><!-- primeiro item -->
+                   
+                    <img class="imagem-slide" src="img/imagens_home/teatro.jpg"><!-- praca das artes -->
+
+                        <div class="imagensescondidas">
+                            <img class="imagem-slide1" src="img/imagens_home/barueribarueri.jpg">
+                            <img class="imagem-slide2" src="img/imagens_home/girafa.jfif">
+
+                                
+                            <p class="parapreco1">por <br><strong> R$ 15,00</strong></p><!-- preco -->
+                            <a class="vermais1" href="../">VER MAIS</a><!-- link para ver mais -->
+                            <div class="backgroundPurple1">
+                            <p class="textonoroxo1000">Monumento Barueri - Cristovão</p>
+                            </div class="backgroundgreen1">
+                                <p class="textongreen1">1 dia / 5 horas</p>
+                            <div>
+                          
+
+
+
+                            
+                            <p class="parapreco2">por <br><strong> R$ 10,00</strong></p><!-- preco -->
+                            <a class="vermais2" href="../">VER MAIS</a><!-- link para ver mais -->
+                            <div class="backgroundPurple2">
+                            <p class="textonoroxo2">A Viola</p>
+                            </div>
+                            <div class="backgroundgreen2">
+                            <p class="textongreen2">1 dia / 5 horas</p>
+
+
+
+
+                        </div>
+
+                    <p class="parapreco">por <br><strong> R$ 20,00</strong></p><!-- preco -->
+                    <a class="vermais" href="../">VER MAIS</a><!-- link para ver mais -->
+                    <div class="backgroundPurple">
+                    <p class="textonoroxo">Visita à Praça das Artes</p>
                     </div>
-                    <span><a href="#">Encontrar</a></span>
+                    <div class="backgroundgreen">
+                    <p class="textongreen">1 dia / 5 horas</p>
+                    </div>
+                    <!-- <img id="contrasteslide" src="../imagens/contraste.jpg"> -->
+                </li>
+            </ul>
+
+            <div class="dometbm">
+            <a  class="comprar" href="">Saiba mais</a><!-- link para pagina de pagamentos -->
+            <h6 class="fornecedor">Por Prefeitura Municipal</h6> <!-- quem fornece -->
+            </div>
+
+            <ul class="indicador-de-slide"><!-- indicadores de slide -->
+                <li class="ativo"></li><!-- slide ativo -->
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul><!-- fechando indicadores de slide -->
+        </div>
+    </div>
+
+
+    
+    <div class="somefertas2">
+        <h2 class="Ofertas">Ofertas do momento</h2> <!-- titulo de ofertas -->
+        <p class="parasimples">Aproveite as melhores ofertas do INFOTUR</p> <!-- melhores ofertas -->
+        <div class="slide_show"><!-- slide show praca das artes -->
+            <ul><!-- lista do slide -->
+                <li><!-- primeiro item -->
+                   
+                    <img class="imagem-slide" src="img/imagens_home/teatro.jpg"><!-- praca das artes -->
+
+                    <p class="parapreco10">por <br><strong> R$ 20,00</strong></p><!-- preco -->
+                    <a class="vermais1" href="../">VER MAIS</a><!-- link para ver mais -->
+                    <div class="backgroundPurple1">
+                    <p class="textonoroxo1">Visita à Praça das Artes</p>
+                    </div class="backgroundgreeN1">
+                        <p class="textongreeN1">1 dia / 5 horas</p>
+                    </div>
+                    <!-- <img id="contrasteslide" src="../imagens/contraste.jpg"> -->
+                </li>
+            </ul>
+
+            <div class="dometbm">
+            <a  class="comprar" href="">Saiba mais</a><!-- link para pagina de pagamentos -->
+            <h6 class="fornecedor">Por Prefeitura Municipal</h6> <!-- quem fornece -->
+            </div>
+
+            <ul class="indicador-de-slide"><!-- indicadores de slide -->
+                <li class="ativo"></li><!-- slide ativo -->
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul><!-- fechando indicadores de slide -->
+        </div>
+    </div>
+
+
+        <section class="melhoresAvaliados"><!-- melhores avaliados -->
+            <h2 class="textorecepcao">Melhores avaliados</h2><!-- titulo da secao melhorss avaliados -->
+            <p class="parasimplesType2">As melhores ofertas para você, se divertir e economizar</p>
+
+            <div class="localavaliado"><!-- imagem do melhor avaliado -->
+                <img class="imagem-slide" src="img/imagens_home/Parque-Dom-José.jpg"><!-- imagem de fato -->
+                <a class="paraprecoavaliados">PÚBLICO</a><!-- texto no centeo da img -->
+                <div class="backgroundPurple2">
+                <h3 class="textonoroxo2">Parque Ecológico Barueri</h3><!-- nome do lugar -->
+                </div>
+                <div class="backgroundgreen2">
+                <p class="textongreen2">Das 06:00 as 19:00</p><!-- horario de funcinamento -->
+                </div>
+                <div class="backwhite" >
+                <p class="textoconvite">Um dos melhores destinos para se visitar em Barueri.<br>Ótimo local para ir se divetir com familiares e amigos</p><!-- textto convidativo do local -->
+               
+
+
+                    <div class="avaliacao">
+                        <span class="estrela"></span>            
+                        <span class="estrela"></span>
+                        <span class="estrela"></span>
+                        <span class="estrela"></span>
+                        <span class="estrela"></span>
+                    </div>
+
+                
+                    <a class="vermaiscantoverde">Ver mais</a><!-- link ver mais a pagina do monumento -->
+                </div>
+
+                <div class="slidemelhoresavaliados">
+                    <span class="barradeslide"></span>
+                    <span class="barradeslide"></span>
+                    <span class="barradeslide"></span>
+                </div>
+            </div><!-- fim div da img -->
+        </section><!-- fim secao de mehores avaliados -->
+
+
+
+        <section class="melhoresAvaliados2"><!-- melhores avaliados -->
+            <h2 class="textorecepcao2">Melhores avaliados</h2><!-- titulo da secao melhorss avaliados -->
+            <p class="parasimplesType20">As melhores ofertas para você, se divertir e economizar</p>
+
+            <div class="localavaliado"><!-- imagem do melhor avaliado -->
+                <img class="imagem-slide20" src="img/imagens_home/Parque-Dom-José.jpg"><!-- imagem de fato -->
+
+                    <div class="suma">
+                        <img class="imagem-slide200" src="img/imagens_home/boulevard.jfif"><!-- imagem de fato -->
+                        <a class="paraprecoavaliado10">GRATUITO</a>
+                        <div class="backgroundPurple200">
+                            <h3 class="textonoroxo200">Boulevard Barueri</h3><!-- nome do lugar -->
+                            </div>
+
+                            <div class="backgroundgreen200">
+                                <p class="textongreen200">Das 06:00 as 19:00</p><!-- horario de funcinamento -->
+                                </div>
+
+                                <div class="backwhite10" >
+                                    <p class="textoconvite10">Um dos melhores destinos para se visitar em Barueri.<br>Ótimo local para ir se divetir com familiares e amigos</p><!-- textto convidativo do local -->
+                                   
+
+                                    <a class="vermaiscantoverde10">Ver mais</a>
+
+
+                                    
+                    <div class="avaliacao2">
+                        <span class="estrela2"></span>            
+                        <span class="estrela2"></span>
+                        <span class="estrela2"></span>
+                        <span class="estrela2"></span>
+                        <span class="estrela2"></span>
+                    </div>
+                        <p class="textoestrela">(32)</p>
+                    </div>
+
+                <a class="paraprecoavaliado1">GRATUITO</a><!-- texto no centeo da img -->
+                <div class="backgroundPurple20">
+                <h3 class="textonoroxo20">Parque Ecológico Barueri</h3><!-- nome do lugar -->
+                </div>
+                <div class="backgroundgreen20">
+                <p class="textongreen20">Das 06:00 as 19:00</p><!-- horario de funcinamento -->
+                </div>
+                <div class="backwhite1" >
+                <p class="textoconvite1">Um dos melhores destinos para se visitar em Barueri.<br>Ótimo local para ir se divetir com familiares e amigos</p><!-- textto convidativo do local -->
+               
+
+
+                    <div class="avaliacao1">
+                        <span class="estrela1"></span>            
+                        <span class="estrela1"></span>
+                        <span class="estrela1"></span>
+                        <span class="estrela1"></span>
+                        <span class="estrela1"></span>
+                    </div>
+                    <p class="textoestrela1">(32)</p>
+                
+                    <a class="vermaiscantoverde1">Ver mais</a><!-- link ver mais a pagina do monumento -->
+                </div>
+
+                <div class="slidemelhoresavaliados">
+                    <span class="barradeslide"></span>
+                    <span class="barradeslide"></span>
+                    <span class="barradeslide"></span>
+                </div>
+            </div><!-- fim div da img -->
+        </section><!-- fim secao de mehores avaliados -->
+
+
+<div class="abcd">
+
+        <h4 id="categoriaS">Categorias</h4> <!-- titulo seção categorias -->
+        <p class="parasimplesS">Diversas categorias de passeios e atrações para você escolher</p><!-- tecto introdutorio -->
+        <div id="imagensredondas"><!-- abrindo div das imagens -->
+            <img class="imgredondA1" src=".img/imagens_home/crianças-brincando.png"><!-- primeira imagem a esquerda -->
+            <p>Esportes</p><!-- textp primeira imagem -->
+            <img class="imgredonda2" src="img/imagens_home/futebol.jpg"><!-- imagem do meio -->
+            <p>Infantis</p><!-- texto imagem do meio -->
+            <img class="imgredonda3" src="img/imagens_home/show.jpg"><!-- ultima imagem -->
+            <p>Eventos</p><!-- texto da ultima imagem -->
+
+            
+            <ul class="indicador-de-slide2"><!-- indicadores de slide -->
+                <li class="ativo"></li><!-- slide ativo -->
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul><!-- fechando indicadores de slide -->
+        </div>
+
+    </div>
+
+
+        <div class="hadesumir">
+            <h5 class="categorias10">Categorias</h4> <!-- titulo seção categorias -->
+            <p class="parasimples2a">Diversas categorias de passeios e atrações para você escolher</p><!-- tecto introdutorio -->
+            <div id="imagensredondas"><!-- abrindo div das imagens -->
+                <img class="imgredonda1" src="img/imagens_home/crianças-brincando.png"><!-- primeira imagem a esquerda -->
+                <p class="textoinfantil">Infantis</p><!-- textp primeira imagem -->
+
+                <img class="imgredonda2" src="img/imagens_home/futebol.jpg"><!-- imagem do meio -->
+                <p class="textoinfanti2">Esportes</p><!-- texto imagem do meio -->
+
+                <img class="imgredonda3" src="img/imagens_home/show.jpg"><!-- ultima imagem -->
+                <p class="textoinfanti3">Eventos</p><!-- texto da ultima imagem -->
+
+                <img class="imgredonda4" src="img/imagens_home/campoverde.jfif"><!-- ultima imagem -->
+                <p class="textoinfanti4">Lazer</p><!-- texto da ultima imagem -->
+
+                <img class="imgredonda5" src="img/imagens_home/igreja.jpg"><!-- ultima imagem -->
+                <p class="textoinfanti5">Religiosos</p><!-- texto da ultima imagem -->
+
+                <img class="imgredonda6" src="img/imagens_home/comida.jpg"><!-- ultima imagem -->
+                <p class="textoinfanti6">Gastronomicos</p><!-- texto da ultima imagem -->
+    
+    
+                
+                <ul class="indicador-de-slide2"><!-- indicadores de slide -->
+                    <li class="ativo"></li><!-- slide ativo -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul><!-- fechando indicadores de slide -->
+            </div>
+        </div>
+
+
+        <div class="blocquesome">
+
+        
+            <section class="secao2"><!-- caracteristicas do infotur -->
+                <h2 class="titulocaracteristicas">INFOTUR</h2> <!-- titulo da secao -->
+                <p class="subtitulo">Principais vantagens</p><!-- subtitulo -->
+
+                <div class="divcaracteristicas"><!-- primeira div qr code -->
+                    <h6 class="titulobloco">QR-CODE</h6>
+                    <img class="minilogoref" src="img/imagens_home/qrcode_icon.png">
+                    <p class="textodacaixa"><strong>Praticidade</strong> para saber a história de qualquer monumento, ou ponto turístico que você esteja.</p>
+                    <a class="saibamaiscaixa">Saiba mais</a>
+                </div>
+
+                <div class="divcaracteristicas"><!-- 2 div pacotes turisticos -->
+                    <h6 class="titulobloco2">Pacotes turísticos</h6>
+                    <img class="minilogoref2" src="img/imagens_home/onibus_icon.png">
+                    <p class="textodacaixa"><strong>Mais agilidade</strong> para encontrar pacotes de viajens e passeios. E tudo do conforto da sua casa.</p>
+                    <a class="saibamaiscaixa">Saiba mais</a>
+                </div>
+
+                <div class="divcaracteristicas"><!-- 3 div turismo ao seu alcance -->
+                    <h6 class="titulobloco">Turísmo ao seu alcance</h6>
+                    <img class="minilogoref" src="img/imagens_home/humano_icon.png">
+                    <p class="textodacaixa"><strong>Mais facilidade</strong> para encontrar monumentos, pontos turísticos e atrações próximos a você.</p>
+                    <a class="saibamaiscaixa">Saiba mais</a>
+                </div>
+
+                <div id="grandediv" ><!-- 4 div quem somos -->
+                    <h6 id="grandsecao">QUEM SOMOS ?</h6>
+                    <img id="pessoascoversando" src="img/imagens_home/pessoasviajando_icon.png">
+                    <p id="grandetexto" >Somos um grupo de estudantes da FIEB (Fundação Instituto de Educação de Barueri). E criamos esta solução web para que possamos adquirir experiência no processo de desenvolvimento de web sites.</p>
+                </div>
+
+            </section><!-- final da secao dobre caracteristicas -->
+
+        </div>
+
+
+
+
+
+        <div class="blocquesome2">
+
+        
+            <section class="secao20"><!-- caracteristicas do infotur -->
+                <h2 class="titulocaracteristicas2">INFOTUR</h2> <!-- titulo da secao -->
+                <p class="subtitulo2">Principais vantagens</p><!-- subtitulo -->
+
+                <div class="divcaracteristicas2"><!-- primeira div qr code -->
+                    <h6 class="titulobloco1">QR-CODE</h6>
+                    <img class="minilogoref1" src="img/imagens_home/qrcode_icon.png">
+                    <p class="textodacaixa1"><strong>Praticidade</strong> para saber a história de qualquer monumento, ou ponto turístico que você esteja.</p>
+                    <a class="saibamaiscaixa1">Saiba mais</a>
+                </div>
+
+                <div class="divcaracteristicas21"><!-- 2 div pacotes turisticos -->
+                    <h6 class="titulobloco21">Pacotes turísticos</h6>
+                    <img class="abacximinilogoref21" src="img/imagens_home/onibus_icon.png">
+                    <p class="textodacaixa21"><strong>Mais agilidade</strong> para encontrar pacotes de viajens e passeios. E tudo do conforto da sua casa.</p>
+                    <a class="saibamaiscaixa21">Saiba mais</a>
+                </div>
+
+                <div class="divcaracteristicas211"><!-- 3 div turismo ao seu alcance -->
+                    <h6 class="titulobloco211">Turísmo ao seu alcance</h6>
+                    <img class="peraminilogoref211" src="img/imagens_home/humano_icon.png">
+                    <p class="textodacaixa211"><strong>Mais facilidade</strong> para encontrar monumentos, pontos turísticos e atrações próximos a você.</p>
+                    <a class="saibamaiscaixa211">Saiba mais</a>
+                </div>
+
+                <div id="grandediv1" ><!-- 4 div quem somos -->
+                    <h6 id="grandsecao1">QUEM SOMOS ?</h6>
+                    <img id="pessoascoversando1" src="img/imagens_home/pessoasviajando_icon.png">
+                    <p id="grandetexto1" >Somos um grupo de estudantes da FIEB (Fundação Instituto de Educação de Barueri). E criamos esta solução web para que possamos adquirir experiência no processo de desenvolvimento de web sites.</p>
+                </div>
+
+<div id="experimental">
+                <div class="abacayesomegrande">
+                    <h6 id="cispagrandsecao2">OBJETIVO</h6>
+                    <img id="pessoascoversando2" src="img/imagens_home/pessoasviajando_icon.png">
+                    <p id="grandetexto2" >Temos como objetivo o acesso ao lazer, cultura e esportes. Trazendo a você mais praticidade e agilidade na hora de escolher seu destino.</p>
+                </div>
+            </div>
+
+            </section><!-- final da secao dobre caracteristicas -->
+
+        </div>
+
+
+
+
+<div class="sumaagr">
+        <section><!-- secao do mapa interativo -->
+            <div>
+                <h3 class="titulopreto">Praticadade ao escolher seu passeio !</h3><!-- titulo da secao -->
+                <img class="imagemrepresenatacao" src="img/imagens_home/map_icon.JPG"><!-- imagagem do mapa -->
+                <div class="backwhite2">
+                    <p class="textoexplica" ><strong>Pontos turísticos próximos</strong><br>Encontre a atração mais proxima de sua localidade !</p> 
+                </div><!-- texto introdutorio -->
+                
+            </div>
+
+            <input id="encontrar1" type="button" value="Encontar"><!-- botao encontrar -->
+            <a class="saibamais" >SAIBA MAIS</a><!-- link saiba mais -->
+            <div class="linhadivisaopreta"></div><!-- linha de quebra --><!-- linha divissao -->
+
+            <div>
+                <h3 class="titulopreto">Ofertas para sua região</h3><!-- sehunda parte da secao -->
+                <img class="imagemrepresenatacao" src="img/imagens_home/pessoasviajando2_icon.JPG"><!-- imagem das pessoas viajando -->
+                <div class="backwhite3">
+                <p class="textoexplica2"><strong>Ofertas exclusivas para você</strong><br>Ofertas exclusivas para a região   em que você está, economize  de onde estiver !</p><!-- texto introdutorio -->
+                </div>
+                <input id="encontrar2" type="button" value="Encontar"><!-- outro botao encontrar -->
+                <!-- <a class="saibamais2" >SAIBA MAIS</a>saiba mais -->
+                <img class="fundobranco2" src="img/imagens_home/backbranco.png">
+            </div>
+        </section>
+    </div>
+
+        <div class="gonasumir">
+            <section class="ai"><!-- secao do mapa interativo -->
+                <div>
+                    <h3 class="titulopreto1">Praticadade ao escolher seu passeio !</h3><!-- titulo da secao -->
+                    <img class="imagemrepresenatacao1" src="img/imagens_home/map_icon.JPG"><!-- imagagem do mapa -->
+                    <div class="backwhite21">
+                        <p class="textoexplica1" ><strong>Pontos turísticos próximos</strong><br>Encontre a atração mais proxima de sua localidade !</p> 
+                    </div><!-- texto introdutorio -->
+                    
+                </div>
+
+                <input id="encontrar11" type="button" value="Encontar"><!-- botao encontrar -->
+                <a class="saibamais1" >SAIBA MAIS</a><!-- link saiba mais -->
+                <div class="linhadivisaopreta1"></div>
+                <!-- linha de quebra --><!-- linha divissao -->
+
+                <div>
+                    <h3 class="titulopreto2">Ofertas para sua região</h3><!-- sehunda parte da secao -->
+                    <img class="imagemrepresenatacao2" src="img/imagens_home/pessoasviajando2_icon.JPG"><!-- imagem das pessoas viajando -->
+                    <div class="backwhite32">
+                    <p class="textoexplica22"><strong>Ofertas exclusivas para você</strong><br>Ofertas exclusivas para a região   em que você está, economize  de onde estiver !</p><!-- texto introdutorio -->
+                    </div>
+                    <input id="encontrar22" type="button" value="Encontar"><!-- outro botao encontrar -->
+                    <!-- <a class="saibamais2" >SAIBA MAIS</a>saiba mais -->
+                    <img class="fundobranco22" src="img/imagens_home/backbranco.png">
+                    <a class="saibamais2" >SAIBA MAIS</a>
                 </div>
             </section>
         </div>
-        <section class="duvidas">
-            <h1>DÚVIDAS FREQUENTES</h1>
-            <details>
-                <summary>O QUE É O INFOTUR? <p>+</p></summary>
-                <p>O INFOTUR é um website de apoio ao turismo que tem como principal objetivo facilitar e dar mais praticidade par ao acesso ao lazer e entretenimento em nossa</p>
+        <h4></h4>
+        <!-- <div class="caixa" onclick="toggleTexto()">
+            <div class="conteudo">
+              <p>Texto oculto que será exibido ao clicar na caixa.</p>
+            </div>
+          </div> -->
+
+    <div id="someplizi">
+            <p class="DUVIDAS">DÚVIDAS FREQUENTES</p>
+
+            <div class="cinzabavk">
+                <details>
+                    <summary>O QUE É O INFOTUR? +</summary>
+                    <p class="textopreto">O INFOTUR é um website de apoio ao turismo que tem como principal objetivo facilitar e dar mais praticidade par ao acesso ao lazer e entretenimento em nossa</p>
+                </details>
+            </div>
+            
+
+            <details class="cinzabavk2">
+                <summary>O SITE É CONFIÁVEL? +</summary>
+                <p class="textopreto">Sim, o INFOTUR é 100% seguro. Em nosso site você estará protegido de qualquer ameaça ou golpe que possa trazer danos a seus dispositivos ou dados pessoais</p>
             </details>
-            <details>
-                <summary>O SITE É CONFIÁVEL? <p>+</p></summary>
-                <p>Sim, o INFOTUR é 100% seguro. Em nosso site você estará protegido de qualquer ameaça ou golpe que possa trazer danos a seus dispositivos ou dados pessoais</p>
+
+
+            <details class="cinzabavk3">
+                <summary>QUAL O DIFERENCIAL DO INFOTUR? +</summary>
+                <p class="textopreto">Nosso diferencial se encontra na praticidade e facilidade de encontrar informações diversas sobre qualquer ponto turístico, atração ou monumento desejado.</p>
             </details>
-            <details>
-                <summary>QUAL O DIFERENCIAL DO INFOTUR? <p>+</p></summary>
-                <p>Nosso diferencial se encontra na praticidade e facilidade de encontrar informações diversas sobre qualquer ponto turístico, atração ou monumento desejado.</p>
+
+
+            <details class="cinzabavk4">
+                <summary>O QUE ENCONTRAREI NO INFOTUR? + </summary>
+                <p class="textopreto">Em nosso website você encontrará diversas opções para seu lazer e entretenimento, como avenda de pacotes turísticos, ofertas, informações sobre atrações e monumentos desejados.</p>
             </details>
+    </div>
+
+    
+    <div id="somenao">
+        <p class="DUVIDAS1">DÚVIDAS FREQUENTES</p>
+
+        <div class="cinzabavk10">
             <details>
-                <summary>O QUE ENCONTRAREI NO INFOTUR? <p>+</p></summary>
-                <p>Em nosso website você encontrará diversas opções para seu lazer e entretenimento, como avenda de pacotes turísticos, ofertas, informações sobre atrações e monumentos desejados.</p>
+                <summary>O QUE É O INFOTUR? +</summary>
+                <div class="soteste">
+                <p class="textopreto1">O INFOTUR é um website de apoio ao turismo que tem como principal objetivo facilitar e dar mais praticidade par ao acesso ao lazer e entretenimento em nossa</p>
+                </div>
             </details>
-            <!-- <div class="box-duvidas"><summary>O QUE É O INFOTUR?</summary>
-            <div class="box-duvidas"><p>O SITE É CONFIÁVEL?</p></div>
-            <div class="box-duvidas"><p>QUAL O DIFERENCIAL DO INFOTUR?</p></div>
-            <div class="box-duvidas"><p>O QUE ENCONTRAREI NO INFOTUR?</p></div> -->
-        </section>
+        </div>
+        
+
+        <details class="cinzabavk21">
+            <summary>O SITE É CONFIÁVEL? +</summary>
+            <p class="textopreto1">Sim, o INFOTUR é 100% seguro. Em nosso site você estará protegido de qualquer ameaça ou golpe que possa trazer danos a seus dispositivos ou dados pessoais</p>
+        </details>
+
+
+        <details class="cinzabavk31">
+            <summary>QUAL O DIFERENCIAL DO INFOTUR? +</summary>
+            <p class="textopreto1">Nosso diferencial se encontra na praticidade e facilidade de encontrar informações diversas sobre qualquer ponto turístico, atração ou monumento desejado.</p>
+        </details>
+
+
+        <details class="cinzabavk41">
+            <summary>O QUE ENCONTRAREI NO INFOTUR? + </summary>
+            <p class="textopreto1">Em nosso website você encontrará diversas opções para seu lazer e entretenimento, como avenda de pacotes turísticos, ofertas, informações sobre atrações e monumentos desejados.</p>
+        </details>
+</div>
     </main>
-    <!-- <script src="js/user-preview.js"></script> -->
+
+    <footer>
+        <div class="footer1">
+            <section class="i1"><!-- Div1 - i1 -->
+            <h5>INFOTUR</h5>
+            <p>E-mail:</p>
+            <p>infotur@gmail.com</p>
+            </section>
+        
+            
+            <section class="i2"><!-- Div 2 - i2 (Contato) -->
+            <p>Central de Atendimento</p>
+            <p> (11) 8967-4536</p>
+            </section>
+        
+            <section class="i3"><!-- Div 3 - i3 (Sobre nós)-->
+            <p> Sobre nós </p>
+            <p> Política de privacidade </p>
+            <a>Fale</a>
+            </section>
+        
+
+
+
+
+
+            <hr>
+        
+            <!-- Section ftult (Footer ultimo = ultima section do footer) -->
+            <section class="ftult">
+            <img src="img/imagens_home/logo.png" width="35%"> <!-- Logotipo -->
+            <p> © 2023 INF TUR  - Instituição de Turismo.<br> 19.242.150/0004-28<br>
+                Rua Capoto Valente, 67- São Paulo, SP - <br>054-18040<br></p>  <!-- Texto localizado a esquerda do logotipo -->
+                <div class="rds"><!-- Icones de redes sociais -->
+                <img src="img/imagens_home/instagram.png" alt="Instagram" srcset="">
+                <img src="img/imagens_home/facebook.png" alt="facebook" srcset="">
+                <img src="img/imagens_home/twitter.png" alt="twitter" srcset="">
+                </div>
+            </section>
+        </div>
+
+        <div class="footer2">
+            <section class="i1"><!-- Div1 - i1 -->
+            <h5>INFOTUR</h5>
+            <p>E-mail:</p>
+            <p>infotur@gmail.com</p>
+            </section>
+        
+            
+            <section class="i2"><!-- Div 2 - i2 (Contato) -->
+            <p>Central de Atendimento</p>
+            <p> (11) 8967-4536</p>
+            </section>
+        
+            <section class="i3"><!-- Div 3 - i3 (Sobre nós)-->
+            <p> Sobre nós </p>
+            <p> Política de privacidade </p>
+            <a>Fale</a>
+            </section>
+        
+
+
+
+
+
+            <hr>
+        
+            <!-- Section ftult (Footer ultimo = ultima section do footer) -->
+            <section class="ftult">
+            <img src="img/imagens_home/logo.png" width="35%"> <!-- Logotipo -->
+            <p> © 2023 INF TUR  - Instituição de Turismo.<br> 19.242.150/0004-28<br>
+                Rua Capoto Valente, 67- São Paulo, SP - <br>054-18040<br></p>  <!-- Texto localizado a esquerda do logotipo -->
+                <div class="rds"><!-- Icones de redes sociais -->
+                <img src="img/imagens_home/instagram.png" alt="Instagram" srcset="">
+                <img src="img/imagens_home/facebook.png" alt="facebook" srcset="">
+                <img src="img/imagens_home/twitter.png" alt="twitter" srcset="">
+                </div>
+            </section>
+        </div>
+      </footer>
+      <!-- final footer -->
 
 </body>
-
 </html>
