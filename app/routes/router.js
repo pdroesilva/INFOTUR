@@ -28,7 +28,8 @@ const regrasValidacaoMiddleware = require("../middlewares/regrasValidacaoMiddlew
 const validacaoFormularioMiddleware = require("../middlewares/validacaoFormularioMiddleware");
 
 
-
+const editarPerfilControllerRead = require("../controllers/editarPerfilController/editarPerfilControllerRead");
+const editarPerfilControllerUpdate = require("../controllers/editarPerfilController/editarPerfilControllerUpdate");
 
 //Conxão das Pags restantes Abaixo
 
@@ -55,6 +56,18 @@ router.get("/termos_de_uso", TermosControllerRead.viewPage);
 router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
 router.get("/pacotespag", pacotespagControllerRead.viewPage);
+
+
+
+router.get("/editar-perfil",
+autenticacaoMiddleware.validateJWT,
+editarPerfilControllerRead.getPage);
+
+router.post("/editar",
+autenticacaoMiddleware.validateJWT,
+regrasValidacaoMiddleware.editarPerfilValidationRules,
+validacaoFormularioMiddleware.editarPerfilValidation,
+editarPerfilControllerUpdate.editUser);
 
 //router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
 
