@@ -1,0 +1,369 @@
+@media(max-width:480px){
+
+
+.txt-welcome{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh 7.5vw;
+    color: white;
+    gap: 3vh;
+    text-align: center;
+    /* background-color: #441982; */
+}
+
+.txt-welcome h1{
+    font: bold 8vw "Poppins",sans-serif;
+}
+
+.txt-welcome p{
+    font: 600 4vw "Poppins",sans-serif;
+}
+
+.search-local{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+}
+
+.input-search{
+    background-color: #F2F2F2;
+    width: 85vw;
+    padding: inherit;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.input-search input{
+    justify-self: center;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+.input-search img{
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    top: -0.3vh;
+}
+
+.location-exp{
+    width: 85vw;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: -1vh;
+    gap: 3.5vh;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.location-exp p{
+    margin-top: 3vh;
+    width: 85%;
+    color: #674499;
+    font: normal 5vw "Poppins",sans-serif;
+}
+
+.location-exp button{
+    background-color: #63A103;
+    color: white;
+    width: 90%;
+    padding: 2vw;
+    font: bold 4.5vw "Poppins",sans-serif;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+}
+
+.categories{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vh auto;
+    text-align: center;
+    gap: 2.5vh;
+    position: relative;
+}
+
+.categories h2{
+    color: #8568BC;
+    font: 600 7vw "Poppins",sans-serif;
+}
+
+.categories p{
+    color: #000000;
+    font: 500 3.5vw "Poppins",sans-serif;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.categories-self{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    margin: 3vh 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.categories-self::-webkit-scrollbar {
+display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.categories-self{
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.categories-self a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    gap: 1.5vh;
+    width: 40vw;
+    
+}
+
+.categories-self a p{
+    width: 40vw;
+    text-align: center;
+    color: #8A6EBE;
+    font: 500 4vw "Poppins",sans-serif;
+}
+
+.categories-self a img{
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.vantagens{
+    background-color: #59368B;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 4vh 0;
+    background-image: url(https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a31…/images/home_5_0__feito_/u1.jpg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vantagens h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 4vh;
+    font-size: 8vw;
+    
+}
+
+.vantagens h2 span{
+    font: normal 6vw "Poppins",sans-serif;
+}
+
+.vantagens>div{
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    padding: 5vw 5vw 2.5vw 5vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    color: #4E4E4E;
+}
+
+.vantagens div span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5C3A8E;
+}
+
+.vantagens div span h3{
+    font: 600 5vw "Poppins",sans-serif;
+
+}
+
+.vantagens div span img{
+    width: 10%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+
+}
+
+.vantagens div a{
+    color: #7DB121;
+    text-decoration: underline;
+}
+
+
+.quem-somos{
+    display: flex;
+    flex-flow: row nowrap !important;
+    padding: 8vw 5vw!important;
+    
+}
+
+.quem-somos img{
+    width: 40%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.quem-somos h3{
+    color: #5C3A8E;
+     font: bold 6vw "Poppins",sans-serif;
+}
+
+.quem-somos p{
+    margin-top: 1.5vh;
+    font: 500 3.5vw "Poppins",sans-serif;
+}
+
+.praticidade{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 5vh auto;
+    
+}
+
+.cor-fundo{
+    background-color: #F9F9F9;
+}
+
+.praticidade h2{
+    color: #555555;
+    font: 500 6.5vw "Poppins",sans-serif;
+    margin-bottom: 2.5vh;
+}
+
+.praticidade img{
+    width: 100%;
+}
+
+.praticidade div{
+    color: #555555;
+    
+}
+
+.praticidade h3{
+    color: #393333;
+    font: 500 5.5vw "Poppins",sans-serif;
+}
+
+.praticidade p{
+    font: normal 4.5vw "Poppins",sans-serif;
+}
+
+.card-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-home div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    position: relative;
+    left: -0.5vh;
+    top: -2vh;
+    padding: 2.5vw 2.5vw 6vw 2.5vw;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+}
+
+.card-home span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+
+}
+
+.card-home span a:first-child{
+    background-color: #7754B7;
+    color: white !important;
+    padding: 1.5vw 5vw;
+    border-radius: 20px;
+    font-weight: 500;
+    position: relative;
+    top: -1vh;
+}
+
+.card-home span a:last-child{
+    color: #7DB121;
+    font-weight: 500;
+    position: relative;
+    left: -1vh;
+}
+
+.duvidas{
+    width: 90%;
+    margin: 6vh auto;
+}
+
+.duvidas h1{
+    text-align: center;
+    font-size:5vw;
+}
+
+.duvidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.duvidas summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5vw;
+    border-radius: 5px;
+    background-color: #ccc;
+    list-style: none;
+    box-shadow: 2px 2px 5px #0000005d;
+
+}
+
+summary{
+    font: normal normal 3.5vw "Poppins", sans-serif;
+}
+
+summary p{
+    font: normal bold 4vw "Poppins", sans-serif;
+}
+details{
+    margin-top: 4vh;
+}
+
+details>p{
+    font: normal 600 3vw "Poppins",sans-serif;
+    color: #000;
+    padding: 2vh;
+}
+
+hr{
+    margin-top: 5vh;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+
+.Boxes.Ofertas{
+    position: relative;
+    right: -1vh;
+}
+
+}

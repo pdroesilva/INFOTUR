@@ -1,126 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/css/rodapé.css">
-<link rel="stylesheet" href="/css/style_endereco.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap"rel="stylesheet"/>
-<link href="https: //fonts.googleapis.com/css2?family= Poppins & display=swap" rel= " stylesheet">
-<script src="/js/scripto_endereco.js" defer></script>
-    <title>Endereço</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/css-home/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/css-home/menu.css">
+    <link rel="stylesheet" href="css/css-home/home.css">
+    <link rel="stylesheet" href="css/css-home/padrao_Caixas.css">
+    <script src="js/slider.js" defer></script>
+    <script src="js/favorito.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
+</head>
+
+<body>
     <header>
-      <!--Logo do Infotur-->
-      <a href="/">
-      <img class="logo" src="img/img_endereço/logo infotur.png" alt="Logo" />
-    </a>
-      <!--Logo do Infotur-->
+        <div class="itens">
+            <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u30.png?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="Logo InfoTur">
+
+            <div class="menu-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-nav">
+                <div class="menu-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <nav>
+                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/838/838534.png" alt="">Pacotes
+                </div>
+                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/879/879757.png" alt="">Ofertas
+                </div>
+                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/512/1009/1009870.png"
+                        alt="">Monumentos</div>
+                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="">Mapa
+                    interativo</div>
+                <div class="nav-item"><img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt="">Meu
+                    usuário</div>
+                <div id="home">Home</div>
+            </nav>
+        </div>
+        <div class="txt-welcome">
+            <h1>Olá, seja bem vindo ao INFOTUR!</h1>
+            <p>Descubra o mundo com praticidade no INFOTUR, o seu site de turismo que te leva aos melhores destinos
+                de forma fácil e rápida</p>
+        </div>
+        <div class="search-local">
+            <div class="input-search">
+                <img src="img/imagens_home/lupa-removebg-preview.png" alt="Lupa">
+                <input type="search" aria-label="Buscar" placeholder="Buscar">
+            </div>
+            <div class="location-exp">
+                <p>Ative sua localização para uma melhor experiência</p>
+                <button>Ativar Localização</button>
+            </div>
+        </div>
     </header>
-
-    <button class="botão"   onclick="goBack()">Voltar</button>
-
-    <script>
-        function goBack() {
-            window.location.href = document.referrer;
-        }
-    </script>
-
-    <section class="titles">
-      <h1>Endereço</h1>
-  
-      <h2>Etapas</h2>
-  </section>
-
- <section class="conteiner1">
-
-  <p>1. Endereço </p>
-  <img src="img/img_endereço/page_6-removebg-preview.png" alt="">
-
-   
-
-  <p>2. Pagamento</p>
-  <img src="img/img_endereço/page_6-removebg-preview.png" alt="">
-
-  <p>3. Confirmação </p>
-
- 
- </section>
-
     <main>
-      <!-- O processo de confimação de endereço -->
+        <section class="Boxes Ofertas">
+            <div>
+                <h2>Ofertas do momento</h2>
+                <aside>Aproveite as melhores ofertas do INFOTUR</aside>
+            </div>
+            <div class="infoBox">
+                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u181_a.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444"
+                    alt="" class="ImgFundo">
+                <div class="precoBox">Por <br><strong>R$20,00</strong></div>
+                <aside>Das 9:00 as 12:00</aside>
+                <h3>Visita Museu Histórico Barueri</h3>
+            </div>
+            <div class="more-by">
+                <a href="#" class="btn_Mais">Saiba Mais</a>
+                <span><strong>Por</strong> Prefeitura Municipal</span>
+            </div>
 
-      <!-- O processo de confimação de endereço -->
-      <section class="barradeinformação" >
-      <div>
-        <input type="text" id="txtBusca" placeholder="CPF:" />
-        <input type="text" id="txtBusca" placeholder="Endereço:" />
-        <input type="text" id="txtBusca" placeholder="Numero da residências:" />
-        <input type="text" id="txtBusca" placeholder="Complemento (opcional):"/>
-        <input type="text" id="txtBusca" placeholder="Bairro:" />
-        <input type="text" id="txtBusca" placeholder="Cidade:" />
-        <input type="text" id="txtBusca" placeholder="Estado:" />
-      </div>
-    </section>
- <!-- botão de avançar-->
- <a href="/PACOTES (Pagamento)/index.html">
-<button class="avançar" >Avançar</button>
-</a>
-<!-- botão de avançar-->
+            </div>
+            </div>
+        </section>
+        <section class="Categorias melhorAva">
+            <div>
+                <h2>Melhores Avaliados</h2>
+                <aside>Os locais com a melhor avaliação para você visitar</aside>
+            </div>
+            <div class="infoBox">
+                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u139_a.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444"
+                    alt="" class="ImgFundo">
+                <div class="precoBox">Público</div>
+                <aside>Das 17:00 as 23:00</aside>
+                <h3>Feira Noturna Barueri</h3>
+            </div>
+            <div class="more-by">
+                <a href="#" class="btn_Mais">Saiba Mais</a>
+                <span><strong>Por</strong> Prefeitura Municipal</span>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>Categorias</h2>
+            <p>Diversas categorias de passeios e atrações para você escolher</p>
+            <div class="categories-self">
+                <a href="#">
+                    <img src="https://source.unsplash.com/random/250x250/?sports" alt="Categoria Esportes">
+                    <p>Esportes</p>
+                </a>
+                <a href="#">
+                    <img src="https://source.unsplash.com/random/250x250/?children" alt=" Categoria Infantis">
+                    <p>Infantis</p>
+                </a>
+                <a href="#">
+                    <img src="https://source.unsplash.com/random/250x250/?events" alt=" Categoria Eventos">
+                    <p>Eventos</p>
+                </a>
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQHZ7L5-qJoNy_wz4ZDpvsRGH0s4FFS5t6dRdTrM1SdBEiNcGK3SpsJSIiASOx_TuvE0&usqp=CAU" alt=" Categoria Eventos">
+                    <p>Pacotes</p>
+                </a>
+            </div>
 
+        </section>
+        <section class="vantagens">
+            <h2>INFOTUR <br><span>Principais vantagens</span></h2>
+            <div>
+                <span>
+                    <h3>QR-CODE</h3>
+                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
+                </span>
+                <p><strong>Praticidade</strong> para saber a história de qualquer monumento, ou ponto turístico que você esteja visitando.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div>
+                <span>
+                    <h3>Pacotes turísticos</h3>
+                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
+                </span>
+                <p><strong>Mais agilidade</strong> para encontrar pacotes de viajens e passeios. E tudo do conforto de sua casa.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div>
+                <span>
+                    <h3>Turismo ao seu alcance</h3>
+                    <img src="img/imagens_home/qr_code-removebg-preview.png" alt="QR CODE">
+                </span>
+                <p><strong>Mais facilidade</strong> para encontrar monumentos, pontos turísticos e atrações próximas a você.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="quem-somos">
+                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u118.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="Quem Somos?">
+                <div>
+                    <h3>QUEM SOMOS?</h3>
+                    <p>Somos um grupo de estudantes da FIEB (Fundação Instituto de Educação de Barueri). E criamos esta solução web para que possamos adquirir experiência no processo de desenvolvimento de web sites.</p>
+                </div>
+            </div>
+        </section>
+        <div class="cor-fundo">
+
+        <section class="praticidade">
+            <h2>Praticidade ao escolher seu passeio</h2>
+            <div class="card-home">
+                <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u91.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="">
+                <div>
+                    <h3>Pontos turísticos próximos</h3>
+                    <p>Encontre a atração mais próxima de sua localidade</p>
+                </div>
+                <span><a href="#">Encontrar</a> <a href="#">SAIBA MAIS -></a></span>
+            </div>
+            <hr>
+
+        </section>
+            <section class="praticidade">
+                <h2>Praticidade ao escolher seu passeio</h2>
+                <div class="card-home">
+                    <img src="https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u170.svg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444" alt="">
+                    <div>
+                        <h3>Pontos turísticos próximos</h3>
+                        <p>Encontre a atração mais próxima de sua localidade</p>
+                    </div>
+                    <span><a href="#">Encontrar</a></span>
+                </div>
+            </section>
+        </div>
+        <section class="duvidas">
+            <h1>DÚVIDAS FREQUENTES</h1>
+            <details>
+                <summary>O QUE É O INFOTUR? <p>+</p></summary>
+                <p>O INFOTUR é um website de apoio ao turismo que tem como principal objetivo facilitar e dar mais praticidade par ao acesso ao lazer e entretenimento em nossa</p>
+            </details>
+            <details>
+                <summary>O SITE É CONFIÁVEL? <p>+</p></summary>
+                <p>Sim, o INFOTUR é 100% seguro. Em nosso site você estará protegido de qualquer ameaça ou golpe que possa trazer danos a seus dispositivos ou dados pessoais</p>
+            </details>
+            <details>
+                <summary>QUAL O DIFERENCIAL DO INFOTUR? <p>+</p></summary>
+                <p>Nosso diferencial se encontra na praticidade e facilidade de encontrar informações diversas sobre qualquer ponto turístico, atração ou monumento desejado.</p>
+            </details>
+            <details>
+                <summary>O QUE ENCONTRAREI NO INFOTUR? <p>+</p></summary>
+                <p>Em nosso website você encontrará diversas opções para seu lazer e entretenimento, como avenda de pacotes turísticos, ofertas, informações sobre atrações e monumentos desejados.</p>
+            </details>
+            <!-- <div class="box-duvidas"><summary>O QUE É O INFOTUR?</summary>
+            <div class="box-duvidas"><p>O SITE É CONFIÁVEL?</p></div>
+            <div class="box-duvidas"><p>QUAL O DIFERENCIAL DO INFOTUR?</p></div>
+            <div class="box-duvidas"><p>O QUE ENCONTRAREI NO INFOTUR?</p></div> -->
+        </section>
     </main>
+    <!-- <script src="js/user-preview.js"></script> -->
 
-    <footer>
+</body>
 
-      <section class="i1">
-
-        <h5>INFOTUR</h5>
-        <p>E-mail:</p>
-        <p>infotur@gmail.com</p>
-      </section>
-
-      
-      <section class="i2">
-
-        <h5> Contato</h5>
-        <p>Central de Atendimento</p>
-        <p> (11) 8967-4536</p>
-      </section>
-
-    
-      <section class="i3">
-
-        <h5>Mais </h5>
-        <p> Sobre nós </p>
-        <p> Política de privacidade </p>
-   
-        <input type="button" value="Fale Conosco">
-      </section>
-
-      <hr>
-
-    
-      <section class="ftult">
-
-        <img src="img/img_endereço/logo infotur.png" width="40%">
-      
-        <p> © 2023 INF TUR  - Instituição de Turismo.<br> 19.242.150/0004-28<br>
-          Rua Capoto Valente, 67- São Paulo, SP - <br>054-18040<br></p>
-        
-     
-          <div class="rds">
-            <img src="img/img_endereço/instagram-logo-removebg-preview.png" alt="Instagram" srcset="">
-            <img src="img/img_endereço/facebook_2-removebg-preview.png" alt="facebook" srcset="">
-            <img src="img/img_endereço/twitter-removebg-preview.png" alt="twitter" srcset="">
-          </div>
-      </section>
-    
-    </footer>
-  
-
-  </body>
 </html>

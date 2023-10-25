@@ -1,0 +1,193 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -250vh;
+    right: 2.4vh;
+    z-index: 10;
+    width: 100%;
+    /* height: 100; */
+    background-color: #441982;
+    transition-duration: 0.5s;
+}
+
+.show-menu{
+    top: 0 !important;
+    transition-duration: 0.5s;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2vh 2vw;
+}
+
+.menu-nav>img{
+    margin: 2vh 2w;
+    width: 20% !important;
+}
+
+.menu-user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 6vw;
+}
+
+.menu-user img{
+    border-radius: 50%;
+    width: 25%;
+    box-shadow: 2px 2px 5px #0000005d;
+    border: 3px solid #63A103;
+}
+
+.menu-user>div{
+    width: 50vw;
+}
+
+
+.menu-user>div>h1, .menu-user>div>aside{
+    font: normal 600 4vw "Poppins", sans-serif;
+    color: white;
+}
+
+.menu-user>div>aside{
+    color: #63A103;
+}
+
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6vh;
+    gap: 1vh;
+}
+
+nav .nav-item{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    width: 100vw;
+    /* height: 15%; */
+    /* background-color: brown; */
+    padding: 1.5vh 3vw;
+    font: normal 500 3.5vw "Poppins",sans-serif;
+    color: white;
+    position: relative;
+    left: 2vh;
+}
+
+nav .nav-item:hover{
+    background-color: #600d79;
+    box-shadow: 2px 2px 5px #0000005d;
+    
+}
+
+nav #home{
+    margin-top: 8vh;
+    background-color: #57348A;
+    width: 100%;
+    padding: 3vw;
+    text-align: center;
+    font: normal 500 4vw "Poppins",sans-serif;
+    color: white;
+}
+
+.nav-item img{
+    width: 10%;
+}
+
+header{
+    width: 100vw;
+    /* height: 90vh; */
+    background-image: url(https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u11.jpg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444) !important;
+    background: white no-repeat scroll center top /cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itens{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+}
+
+.itens>img{
+    margin: 2vh 3vw;
+    width: 30% !important;
+    position: relative;
+    right: 4.5vh;
+}
+
+.menu-container{
+    margin: 2vh 3vw;
+    width: 6.5vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-container div{
+    position: relative;
+    left: -0.4vh;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.user-info{
+    /* position: absolute; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70vw;
+}
+
+.user-info label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.user-info img{
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid ;
+    margin: auto;
+    box-shadow: 2px 2px 5px #0000005d;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.user-info h1{
+    font: normal 500 5vw "Poppins", sanss-serif;
+    margin-top: 2vh;
+}
+
+.user-info aside{
+    font:normal 500 3vw "Poppins", sans-serif;
+    color: #555;
+}
+
+.user-info>div{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+

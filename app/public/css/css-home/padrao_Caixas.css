@@ -1,0 +1,258 @@
+/*!Todas as páginas exceto a de cadastro estão usando esse CSS*/
+
+/*!Importar fonte*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *{
+        font-family: 'poppins', sans-serif;
+    }
+/*!Inserir Ícones*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5vw;
+  font-size: 100%;
+}
+
+.material-symbols-outlined-filled {
+    font-variation-settings:
+    'FILL' 1, 
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5vw;
+    font-size: 100%;
+  }
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: #F59A23;
+}
+  /*!--------------------------*/
+
+  /* @media(max-width:480px){
+    .infoBox{
+        height: 50vh !important;
+
+    }
+    .opcoesPesq a{
+        padding: 1.5vw 1.5vw 1.5vw 2vw !important;
+    }
+  } */
+
+  @media(max-width:768px){
+
+    /* body,html{
+        overflow-x: hidden !important;
+    } */
+
+    .topo-Pesquisa{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+        background-image:url(https://static.vecteezy.com/ti/vetor-gratis/p1/9169455-ceu-dourado-por-do-sol-na-costa-natureza-paisagem-vetor.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .BarraDePesquisa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: -1;
+        width: 90vw;
+        margin: 3vh auto;
+        height: 7vh;
+    }
+
+    .BarraDePesquisa span{
+        width: 20%;
+        background-color: #f2f2f2;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .Boxes{
+        width: 90vw;
+        margin: 5vh auto;
+    }
+
+    .Boxes h2{
+        color:#441982;
+        font: bold 8vw "Poppins",sans-serif;
+    }
+
+    .Boxes>div:first-child>aside{
+        font-size: 3.5vw;
+        margin-bottom: 2.5vh;
+    }
+
+    div.fundoCinza{
+        width: 100vw;
+        margin: auto;
+        background-color: #F2F2F2;
+    }
+
+    .infoBox{
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 2.5vh;
+        background-color: black;
+        position: relative;
+        left: -1vh;
+    }
+
+    .infoBox>.ImgFundo{
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .infoBox p{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        color: white;
+        font-weight: bold;
+        font-size: 4vw;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .infoBox .favorito{
+        position: absolute;
+        top: 5%;
+        right:5%;
+    }
+
+    .infoBox .precoBox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 5vw;
+        color: white;
+
+    }
+
+    .precoBox strong{
+        font-size: 6vw;
+    }
+
+    .infoBox h3{
+        position: absolute;
+        bottom: 0;
+        font-size: 4vw;
+    }
+
+    .autor{
+        position: absolute;
+        bottom: 20% !important;
+        right: 5% !important;
+        color: white;
+    }
+
+    .autor img{
+        width: 10vw !;
+    }
+
+    .infoBox h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7C5DB7;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        height: 15%;
+
+    }
+
+    .infoBox img{
+        width: 10%;
+    }
+    .infoBox aside{
+        position: absolute;
+        bottom: 12%;
+        margin-left: 5vw;
+        z-index: 2;
+        background-color: #7DB121;
+        border-radius: 20px;
+        color:white;
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        width: 35%;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    }
+
+    .more-by{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .more-by a{
+        background-color: #441982;
+        color: white;
+        padding: 1vw 3vw;
+        border-radius: 20px;
+        font:600 3.5vw "Poppins",sans-serif ;
+    }
+
+    main{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .melhorAva{
+        background-image:url(https://files.axshare.com/gsc/NEJ5V6/2d/c0/a3/2dc0a312db434f6dbcea898f9134af4b/images/home_5_0__feito_/u217.jpg?pageId=90a4681c-4202-4ed7-a2f7-0a7668ef8444);
+        background-position: center center;
+        background-size: cover; ;
+        width: 100vw;
+        padding: 0vw 5vw;
+    }
+
+    .melhorAva div:first-child{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        color: white;
+    }
+
+    .melhorAva h2{
+        color: white;
+    }
+
+    .melhorAva .more-by{
+        margin-bottom: 3vh;
+        color: white;
+    }
+
+    .melhorAva .precoBox{
+        border: 2px solid white;
+        padding: 0vw 5vw;
+        border-radius: 15px;
+        font-size: 4vw;
+    }
+
+    
+}
