@@ -22,9 +22,14 @@
     width: 100%;
 }
 
+.LOGUM{
+    position: relative;
+    margin-right: 65vw;
+}
+
 .menu-nav>img{
     margin: 2vh 2w;
-    width: 20% !important;
+    width: 23% !important;
 }
 
 .menu-user{
