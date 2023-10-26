@@ -1,0 +1,671 @@
+body {
+    font-family: "Poppins";
+    margin: 0px;
+    position: relative;
+  }
+
+
+
+
+/*INICO DO CABEÇALHO STYLE*/
+  h1 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ffffff;
+    font-size: 7vw; 
+  }
+
+  h5 {
+    font-size: 3vw;
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+
+  .back-arrow {
+    position: absolute;
+    top: 6vw;
+    left: 10px; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 4.4vw;  
+     
+  }
+  
+  .back-arrow:hover {
+    color: #999;
+  }
+ 
+  .container {
+    position: relative;
+    width: 500px; 
+    height: 300px; 
+  }
+
+  .search-container {
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  input[type="text"] {
+    color: #838383;
+    font-size: 4vw;
+
+  }
+
+  .search-bar {
+    position: relative;
+  }
+  
+  .search-container input[type="text"] {
+    padding-right: 30px;
+    padding: 1.2vw 17vw;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .search-container button {
+    
+    color: #ffffff;
+    position: absolute;
+    top: 14%;
+    right: 0;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1vw;
+    cursor: pointer;
+  }
+
+  .search-container .search-icon {
+    width: 13px;
+    position: absolute;
+    top: 2.3vw;
+    right: 18px; 
+    height: auto;
+    transform: translateY(-50%);
+  }
+  .search-input {
+    padding-right: 30px; 
+  }
+
+  .search-container form {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .header-image {
+    max-width: 100%;
+  }
+/*FIM DO CABEÇALHO STYLE*/
+
+
+
+
+/*FRASES QUE VEM DPS DO CABEÇALHO MAS ANTES DO COMEÇO DOS MONUMENTOS*/
+h2{
+  position: absolute;
+  color: #7c5db7;
+  top: 47.5vw;
+  font-size: 5.5vw;
+  margin-left: 8vw;
+}
+
+.destaque{
+  position: absolute;
+  left: 53%;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #000;
+  font-size: 2.9vw; 
+  width: 90%;
+  top: 58vw;
+}
+/*FIM DAS FRASES QUE VEM DPS DO CABEÇALHO MAS ANTES DO COMEÇO DOS MONUMENTOS*/
+
+
+
+
+/* INICIO DA FONTE CUNHATÃ STYLE*/
+  .cunhatã {
+    position: absolute;
+    width: 85%;
+    border-radius: 2.5%;
+    margin: 0VW;
+    margin-left: 2%;
+    top: 66vw;
+  }
+
+  .descCNT{
+    position: absolute;
+    color: #000;
+    max-height: 130%;
+    width: 87%;
+    top: 124vw;
+    margin-left: 8vw;
+    font-size: 3.8vw;
+  }
+
+  .rating {
+    display: inline-block;
+    position: absolute;
+    top: 143vw;
+    left: 69vw;
+    transform: translate(-30%, -30%);
+    direction: rtl;
+  }
+  
+  .rating label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: orange; 
+    line-height: 1;
+  }
+  
+  .rating label:before {
+    content: "\2605";
+    font-size: 6vw;
+  }
+
+  #ver-mais {
+    font-family: Poppins;
+    display: block;
+    position: absolute;
+    top: 141vw; /* Distância vertical a partir do topo */
+    left: 18%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição horizontal */
+    background-color: #7c5db7;
+    color: white;
+    border: none;
+    padding: 1.7% 4%;
+    font-size: 3vw;
+    border-radius: 5vw;
+    cursor: pointer;
+  }
+  /*FIM DA FONTE CUNHATÃ STYLE*/
+
+
+
+
+/*INICIO FONTE DA CONCORDIA STYLE*/
+  .concordia{
+    position: absolute;
+    width: 85%;
+    border-radius: 2.5%;
+    margin: 4VW;
+    margin-left: 2%;
+    top: 150vw;
+  }
+
+  .txtcon{
+    position: absolute;
+    color: #000;
+    max-height: 130%;
+    width: 87%;
+    top: 213vw;
+    margin-left: 8vw;
+    font-size: 3.8vw;
+  }
+
+  .rating2 {
+    display: inline-block;
+    position: absolute;
+    top: 230vw;
+    left: 69vw;
+    transform: translate(-30%, -30%);
+    direction: rtl;
+  }
+  
+  .rating2 label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: orange; 
+    line-height: 1;
+  }
+  
+  .rating2 label:before {
+    content: "\2605";
+    font-size: 6vw;
+  }
+
+  #ver-mais2 {
+    font-family: Poppins;
+    display: block;
+    position: absolute;
+    top: 230vw; /* Distância vertical a partir do topo */
+    left: 18%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição horizontal */
+    background-color: #7c5db7;
+    color: white;
+    border: none;
+    padding: 1.7% 4%;
+    font-size: 3vw;
+    border-radius: 5vw;
+    cursor: pointer;
+  }
+/*FIM DO FONTE CONCORDIA STYLE*/
+
+
+
+
+/*INICIO MONUMENTO FAMILIA STYLE*/
+.Familia{
+  position: absolute;
+  width: 85%;
+  border-radius: 2.5%;
+  margin: 4VW;
+  margin-left: 2%;
+  top: 240vw;
+}
+
+.txtfml{
+  position: absolute;
+  color: #000;
+  max-height: 130%;
+  width: 87%;
+  top: 303vw;
+  margin-left: 8vw;
+  font-size: 3.8vw;
+}
+
+.rating3 {
+  display: inline-block;
+  position: absolute;
+  top: 320vw;
+  left: 69vw;
+  transform: translate(-30%, -30%);
+  direction: rtl;
+}
+
+.rating3 label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: orange; 
+  line-height: 1;
+}
+
+.rating3 label:before {
+  content: "\2605";
+  font-size: 6vw;
+}
+
+#ver-mais3 {
+  font-family: Poppins;
+  display: block;
+  position: absolute;
+  top: 320vw; /* Distância vertical a partir do topo */
+  left: 18%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição horizontal */
+  background-color: #7c5db7;
+  color: white;
+  border: none;
+  padding: 1.7% 4%;
+  font-size: 3vw;
+  border-radius: 5vw;
+  cursor: pointer;
+}
+/*FIM DO MONUMENTO FAMILIA STYLE*/
+
+
+
+
+/*INICIO DO MONUMENTO VIOLA STYLE*/
+.VIOLA{
+  position: absolute;
+  width: 85%;
+  border-radius: 2.5%;
+  margin: 4VW;
+  margin-left: 2%;
+  top: 330vw;
+}
+
+.txtviola{
+  position: absolute;
+  color: #000;
+  max-height: 130%;
+  width: 87%;
+  top: 390vw;
+  margin-left: 8vw;
+  font-size: 3.8vw;
+}
+
+.rating4 {
+  display: inline-block;
+  position: absolute;
+  top: 408vw;
+  left: 69vw;
+  transform: translate(-30%, -30%);
+  direction: rtl;
+}
+
+.rating4 label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: orange; 
+  line-height: 1;
+}
+
+.rating4 label:before {
+  content: "\2605";
+  font-size: 6vw;
+}
+
+#ver-mais4 {
+  font-family: Poppins;
+  display: block;
+  position: absolute;
+  top: 406vw; /* Distância vertical a partir do topo */
+  left: 18%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição horizontal */
+  background-color: #7c5db7;
+  color: white;
+  border: none;
+  padding: 1.7% 4%;
+  font-size: 3vw;
+  border-radius: 5vw;
+  cursor: pointer;
+}
+/*FIM DO MONUMENTO DA VIOLA*/
+
+
+
+
+/*FOOTER*/
+footer {
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+
+
+
+.i1, .i2, .i3 {
+
+  font-family: "Poppins";
+
+  color: white;
+
+  margin: 3px;
+
+  width: 50%;
+  max-width: 60%;
+  margin-left: 5%;
+  height: 50%;
+  max-height: 60%;
+  
+
+  line-height: 5px;
+}
+
+
+.i1 p {
+  font-size: clamp(0.1rem, 3.5vw, 1rem);
+  font-weight: 600;
+}
+
+.i1 h5 {
+
+  font-size: clamp(0.3rem, 4vw, 2rem);
+  font-weight: 500;
+}
+
+.i2 p {
+  font-size: clamp(0.1rem, 3.5vw, 1rem);
+  
+  font-weight: 600;
+}
+
+.i2 h5 {
+
+  font-size: clamp(0.1rem, 4vw, 2rem);
+ 
+  font-weight: 500;
+}
+
+
+
+.i3 p {
+  font-size: clamp(0.1rem, 3.5vw, 1rem);
+ 
+  font-weight: 600;
+}
+
+.i3 h5 {
+
+  font-size: clamp(0.1rem, 4vw, 2rem);
+ 
+  font-weight: 500;
+}
+
+.i3 input {
+
+  margin-top: 10px;
+  background-color:  #7C5DB7;
+  border-radius: 15px;
+  border: solid 2px white;
+
+  color: white;
+  font-family: "Poppins";
+
+  
+  max-width: 60%;
+  max-width: 300px;
+
+  font-size: 3.0vw;
+}
+
+
+
+
+/* Seção ftut */
+
+
+footer hr {
+
+  width: 90%;
+
+  border: solid 1px white;
+}
+
+.ftult {
+  position: relative;
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 3vw;
+
+  padding-bottom: 10px;
+}
+
+
+
+.ftult p {
+
+
+  position: absolute;
+  left: 30%;
+  bottom: 0.5%;
+
+  top: 7%;
+}
+
+.rds {
+
+  position: absolute;
+  margin-left: 6%;
+  bottom: 1%;
+  
+
+  width: 21%;
+
+}
+
+.rds img {
+
+  width: 30%;
+
+
+}
+/*FIM DO FOOTER*/
+
+/*ANTERIORES E PROXIMOS*/
+nav  {
+
+  position: relative;    
+  display: flex;
+  
+  width: 100%;
+  
+  height: 180px;
+  }
+  
+  
+  
+  
+  
+  .containerclass {
+  
+      position: absolute;
+  
+      left: 25%;
+      top: 58%;
+  
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      height: 50px;
+      width: 50%;
+  }
+  
+  
+  .btt {
+  
+      position: absolute;
+      left: 15%;
+      display: flex;
+      top: 20%;
+      
+      align-items: center;
+      
+      height: 50%;
+      width: 70%;
+  
+  }
+  
+  .btt input {
+  
+      margin: 5vw;
+  
+  }
+  
+  .btt :nth-child(1) {
+  
+  
+      
+      width: 70%;
+      height: 45%;
+      background-color: #7DB121;
+      border-radius: 5px;
+      border: #7DB121;
+  
+      color: #ffff;
+      font-family: "Poppins";
+      font-weight: 600;
+  }
+  
+  
+  
+  .btt :nth-child(2) {
+  
+  
+      
+      width: 70%;
+      height: 45%;
+      background-color:  #7C5DB7;
+      border:  #7C5DB7;
+      border-radius: 5px;
+  
+      color: #ffff;
+      font-family: "Poppins";
+      font-weight: 600;
+  }
+  
+  
+  .containerclass  :nth-child(1) {
+  
+  
+      background-color:#F59A23 ;
+      width: 15%;
+      max-width: 40px;
+      height: 55%;
+      max-height: 65%;
+      color: #ffff;
+      font-family: "Poppins";
+      border-radius: 5px;
+  
+      text-align: center;
+  }
+  
+  .containerclass div {
+  
+      background-color:gainsboro;
+  
+      width: 15%;
+      max-width: 40px;
+      height: 55%;
+      max-height: 65%;
+  
+      color: black;
+      font-family: "Poppins";
+      font-size:clamp(0.5rem,3.2vw,1rem);
+      font-weight: 600;
+      border-radius: 5px;
+      text-align: center;
+      
+      
+  
+      margin: 5px;
+  
+  }
+
+
+
+/*MEDIA QUERIES, NÃO TOQUE*/
+  @media screen and (max-width: 768px) {
+ 
+  }
+  @media screen and (max-width: 320px) {
+    
+    }
+  
+  
