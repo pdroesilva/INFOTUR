@@ -5,7 +5,7 @@ const router = express.Router()
 const jwt = require("jsonwebtoken");
 
 const homeControllerRead = require("../controllers/homeController/homeControllerRead");
-const indexControllerRead = require("../controllers/enderecoController/indexControllerRead");
+const qrcodeControllerRead = require("../controllers/qrcodeController/qrcodeControllerRead");
 const TermosControllerRead = require("../controllers/termos_de_usoController/termosControllerRead");
 const ofertasControllerRead = require("../controllers/ofertasController/ofertasControllerRead");
 const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/ofertasmaisControllerRead");
@@ -49,7 +49,7 @@ cadastroControllerCreate.createUsuario);
 router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
 
 router.get("/", homeControllerRead.viewPage);
-router.get("/index", indexControllerRead.viewPage);
+router.get("/qrcode", qrcodeControllerRead.viewPage);
 router.get("/termos_de_uso", TermosControllerRead.viewPage);
 router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
