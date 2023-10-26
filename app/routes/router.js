@@ -12,7 +12,7 @@ const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/
 const pacotespagControllerRead = require("../controllers/pacotespagController/pacotespagControllerRead");
 const perfilControllerRead = require("../controllers/perfilController/perfilControllerRead");
 
-//const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
+const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
 
 
 const cadastroControllerRead = require("../controllers/cadastroController/cadastroControllerRead");
@@ -46,9 +46,7 @@ validacaoFormularioMiddleware.validacaoCadastro,
 autenticacaoMiddleware.encriptarSenha,
 cadastroControllerCreate.createUsuario);
 
-
-
-//router.get("/personais", personaisControllerRead.viewPage);
+router.get("/usuarioconfigs", usuarioconfigControllerRead.viewPage);
 
 router.get("/", homeControllerRead.viewPage);
 router.get("/index", indexControllerRead.viewPage);
