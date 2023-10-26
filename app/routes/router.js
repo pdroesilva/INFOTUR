@@ -11,6 +11,8 @@ const ofertasControllerRead = require("../controllers/ofertasController/ofertasC
 const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/ofertasmaisControllerRead");
 const pacotespagControllerRead = require("../controllers/pacotespagController/pacotespagControllerRead");
 const perfilControllerRead = require("../controllers/perfilController/perfilControllerRead");
+const pacotesconfimacaoControllerRead = require("../controllers/pacotesconfirmacaoController/pacotesconfimacaoControllerRead");
+
 
 const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
 
@@ -54,6 +56,8 @@ router.get("/termos_de_uso", TermosControllerRead.viewPage);
 router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
 router.get("/pacotespag", pacotespagControllerRead.viewPage);
+router.get("/pacotes_confimacao", pacotesconfimacaoControllerRead.viewPage);
+
 
 
 
