@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuário (Dúvidas Frequentes)</title>
+    <title>Usuário (favoritados)</title>
     <link rel="stylesheet" href="/css/reset_usuariofav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -17,7 +17,7 @@
     
     <header>
         <div class="itens">
-            <a href="/usuario(recomenda)/usuariorecom.html"><img src="/img/img_usuariofav/seta-para-a-esquerda.png" alt="Voltar"></a>
+            <a href="/usuariorecom"><img src="img/img_usuariofav/seta-para-a-esquerda.png" alt="Voltar"></a>
             <div class="menu-container">
                 <div></div>
                 <div></div>
@@ -30,12 +30,12 @@
                 <div></div>
                 <div></div>
             </div>
-            <img src="/img/img_usuariofav/INFOTUR LOGO.png" alt="Logo">
+            <img src="img/img_usuariofav/INFOTUR LOGO.png" alt="Logo">
         </div>
         <div class="menu-user">
-            <img src="/img/img_usuariofav/mulher sorridente.jpg" alt="usuario">
+            <img src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png" alt="usuario">
             <div>
-                <h1>Maria Silva</h1>
+                <h1><%- data.usuario.nome %></h1>
                 <aside>450 INFC</aside>
             </div>
         </div>
@@ -75,17 +75,17 @@
         </div>
 
         <div class="user-info">
-            <img src="/img/img_usuariofav/mulher sorridente.jpg" alt="Foto de Perfil">
-            <h1>Maria</h1>
+            <img src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png" alt="Foto de Perfil">
+            <h1><%- data.usuario.nome %></h1>
             <aside>Barueri, São Paulo Brasil</aside>
 
            <div>  
 
-            <a href="../usuario(recomenda)/usuariorecom.html">
+            <a href="/usuariorecom">
              <div class="caixa-user recomendacoes">Recomendações</div> 
             </a>
 
-            <a href="../usuario(favoritados)/usuariofav.html">
+            <a href="/usuariofav">
              <div class="caixa-user favoritados">Favoritados</div>
             </a> 
 
