@@ -56,11 +56,12 @@
 
     header img{
         position: relative;
+        top: -1.8vh;
+        left: -2vh;
         bottom: 5px;
         max-width: 140px;
         height: 120%;
-        margin: 1vw 1vw 3vw 2vw;
-    
+        margin: 1vw 1vw 3vw 1vw;  
     }
 
     main{
