@@ -69,7 +69,8 @@
 
 
     footer hr {
-        margin-left: 10%;
+        position: relative;
+        margin-left: 40%;
         width: 90%;
     
         border: solid 1px white;
