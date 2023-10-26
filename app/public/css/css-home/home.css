@@ -365,4 +365,97 @@ hr{
     right: -1vh;
 }
 
+
+
+
+footer hr {
+
+    width: 90%;
+
+    border: solid 1px white;
+}
+
+.ftult {
+    position: relative;
+
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 3vw;
+
+    padding-bottom: 10px;
+}
+
+
+
+.ftult p {
+
+
+    position: absolute;
+    left: 30%;
+    bottom: 0.5%;
+
+    top: 7%;
+}
+
+.rds {
+
+    position: absolute;
+    margin-left: 6%;
+    bottom: 1%;
+    
+
+    width: 21%;
+  
+}
+
+.rds img {
+
+    width: 30%;
+
+
+}
+
+.IT{
+    position: relative;
+}
+
+.EM{
+    position: relative;
+    top: -6vh;
+
+}
+
+.EMINF{
+    position: relative;
+    top: -4vh;
+}
+
+.cont{
+    position: relative;
+    top: -3vh;
+
+}
+
+.cent{
+    position: relative;
+    top: -1vh;
+
+}
+
+.num{
+    position: relative;
+    top: 1vh;
+
+}
+
+.SN{
+    position: relative;
+    top: 3.8vh;
+}
+
+.pp{
+    position: relative;
+    top: 5.5vh;
+}
+
 }
