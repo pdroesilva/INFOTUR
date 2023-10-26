@@ -12,6 +12,7 @@ const ofertasmaisControllerRead = require("../controllers/ofertasmaisController/
 const pacotespagControllerRead = require("../controllers/pacotespagController/pacotespagControllerRead");
 const perfilControllerRead = require("../controllers/perfilController/perfilControllerRead");
 const pacotesconfimacaoControllerRead = require("../controllers/pacotesconfirmacaoController/pacotesconfimacaoControllerRead");
+const monumentosControllerRead = require("../controllers/monumentosController/monumentosControllerRead");
 
 
 const usuarioconfigControllerRead = require("../controllers/usuarioconfigController/usuarioconfigControllerRead");
@@ -57,8 +58,7 @@ router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
 router.get("/pacotespag", pacotespagControllerRead.viewPage);
 router.get("/pacotes_confimacao", pacotesconfimacaoControllerRead.viewPage);
-
-
+router.get("/monumentos", monumentosControllerRead.viewPage);
 
 
 router.get("/editar-perfil",
