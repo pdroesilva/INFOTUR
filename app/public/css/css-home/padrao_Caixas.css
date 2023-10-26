@@ -115,6 +115,7 @@
         margin-bottom: 2.5vh;
         background-color: black;
         position: relative;
+        right: 1vh;    
     }
 
     .infoBox>.ImgFundo{
