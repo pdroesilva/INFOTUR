@@ -59,11 +59,14 @@
 
     header {
 
-      background-color: black;
-      filter: opacity(65%);
-      height: 18vw;
+      /* filter: opacity(65%); */
       max-height: 95px;
       
+    }
+
+    .BackHeader{
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 18vw;
     }
 
     
