@@ -57,18 +57,12 @@
     }
 
 
-    header {
-
-      /* filter: opacity(65%); */
-      
-    }
-
-    .BackHeader{
+    header {      
       background-color: rgba(0, 0, 0, 0.5);
       height: 18vw;
-      max-height: 95px;
+      filter: opacity(65%);
+      
     }
-
 
 
 .BackHeader img{
