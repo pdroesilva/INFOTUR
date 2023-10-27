@@ -60,13 +60,13 @@
     header {
 
       /* filter: opacity(65%); */
-      max-height: 95px;
       
     }
 
     .BackHeader{
       background-color: rgba(0, 0, 0, 0.5);
       height: 18vw;
+      max-height: 95px;
     }
 
     
