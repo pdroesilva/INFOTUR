@@ -15,6 +15,7 @@ const pacotesconfimacaoControllerRead = require("../controllers/pacotesconfirmac
 const monumentosControllerRead = require("../controllers/monumentosController/monumentosControllerRead");
 const usuariofavControllerRead = require("../controllers/usuariofavController/usuariofavControllerRead");
 const monumentosvermaisControllerRead = require("../controllers/monumentosvermaisController/monumentosvermaisControllerRead");
+const pacotesControllerRead = require("../controllers/pacotesController/pacotesControllerRead");
 
 
 
@@ -61,6 +62,8 @@ router.get("/ofertas", ofertasControllerRead.viewPage);
 router.get("/ofertas-vermais", ofertasmaisControllerRead.viewPage);
 router.get("/pacotespag", pacotespagControllerRead.viewPage);
 router.get("/usuariofav", usuariofavControllerRead.viewPage);
+router.get("/pacotes", pacotesControllerRead.viewPage);
+
 
 router.get("/pacotes_confimacao", pacotesconfimacaoControllerRead.viewPage);
 router.get("/monumentos", monumentosControllerRead.viewPage);
