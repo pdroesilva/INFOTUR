@@ -14,6 +14,7 @@ const perfilControllerRead = require("../controllers/perfilController/perfilCont
 const pacotesconfimacaoControllerRead = require("../controllers/pacotesconfirmacaoController/pacotesconfimacaoControllerRead");
 const monumentosControllerRead = require("../controllers/monumentosController/monumentosControllerRead");
 const usuariofavControllerRead = require("../controllers/usuariofavController/usuariofavControllerRead");
+const monumentosvermaisControllerRead = require("../controllers/monumentosvermaisController/monumentosvermaisControllerRead");
 
 
 
@@ -63,7 +64,7 @@ router.get("/usuariofav", usuariofavControllerRead.viewPage);
 
 router.get("/pacotes_confimacao", pacotesconfimacaoControllerRead.viewPage);
 router.get("/monumentos", monumentosControllerRead.viewPage);
-
+router.get("/monumentos-vermais", monumentosvermaisControllerRead.viewPage);
 
 router.get("/editar-perfil",
 autenticacaoMiddleware.validateJWT,
